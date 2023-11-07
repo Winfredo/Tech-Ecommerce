@@ -4,7 +4,7 @@
 
 @layer base{
   body{
-    @apply bg-[#131313];
+    @apply bg-[#fafafa];
     margin: 0;
     padding: 0;
     box-sizing: border-box;;

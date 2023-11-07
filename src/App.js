@@ -1,10 +1,15 @@
 import React from 'react';
 import Header from './components/Header';
+import Subheader from './components/SubHeader';
+import Hero from './components/Hero';
+
 function App() {
   return (
-    <div className='' >
+    <main className=''>
       <Header />
-    </div>
+      <Subheader />
+      <Hero />
+    </main>
   );
 }
 
