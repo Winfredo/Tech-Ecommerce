@@ -4,7 +4,8 @@ import Subheader from './components/SubHeader';
 import Hero from './components/Hero';
 import Gadgets from './components/Gadgets';
 import Browse from './components/Browse';
-import Arrival from './components/Arrival'
+import Arrival from './components/Arrival';
+import PopularProducts from './components/PopularProducts';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Gadgets />
       <Browse />
       <Arrival />
+      <PopularProducts />
 
 
       <div className='mt-[3rem] bg-[#fafafa] w-full h-[1000px]'>
