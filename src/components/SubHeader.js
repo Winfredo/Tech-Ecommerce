@@ -9,10 +9,10 @@ import { PiGameControllerDuotone } from "react-icons/pi";
 const SubHeader = () => {
   return (
     <div className="hidden lg:flex flex-1  bg-[#2e2e2e] w-full h-[42px]  text-[#969696]">
-      <div className="hidden  lg:flex lg:items-center lg:justify-evenly h-full w-full xl:max-w-[1250px] mx-auto">
+      <div className="hidden lg:flex lg:items-center lg:justify-evenly h-full w-full xl:max-w-[1250px] mx-auto">
         <ul className="flex flex-1 items-center justify-between">
           <li className="  flex text-sm items-center justify-evenly">
-            <MdPhoneIphone className="mr-2"/>
+            <MdPhoneIphone className="mr-2 ml-5"/>
             <p>Phones</p>
           </li>
           <p>|</p>
@@ -36,7 +36,7 @@ const SubHeader = () => {
             <p>Headphones</p>
           </li>
           <p>|</p>
-          <li className="  flex text-sm items-center ">
+          <li className="  flex text-sm items-center mr-5 ">
             <PiGameControllerDuotone className="mr-2"/>
             <p>Gaming</p>
           </li>
