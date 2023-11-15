@@ -10,10 +10,10 @@ const PopularProducts = () => {
     imageUrl,
   }) => {
     return (
-      <div className="flex items-center justify-center mx-auto">
+      <div className="flex items-center my-3 lg:my-0 justify-evenly mx-auto ">
         <div
           style={{ backgroundColor: Colour }}
-          className="h-[470px] w-[340px] text-left "
+          className="h-[470px] w-[370px] text-left "
         >
           <div className="flex items-center justify-center">
             <img src={imageUrl} alt="iphone" className="h-[250px] w-[250px] " />
@@ -45,7 +45,7 @@ const PopularProducts = () => {
   };
 
   return (
-    <div className="lg:flex  grid grid-cols-1 md:grid-cols-2">
+    <div className="lg:flex grid grid-cols-1 md:grid-cols-2 ">
       <Popular
         Colour="#fff"
         imageUrl="./images/product1.png"
