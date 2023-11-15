@@ -6,6 +6,8 @@ import Gadgets from './components/Gadgets';
 import Browse from './components/Browse';
 import Arrival from './components/Arrival';
 import PopularProducts from './components/PopularProducts';
+import Discount from "./components/Discount"
+import SubFooter from './components/SubFooter';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <Browse />
       <Arrival />
       <PopularProducts />
+      <Discount />
+      <SubFooter />
 
 
       <div className='mt-[3rem] bg-[#fafafa] w-full h-[1000px]'>
