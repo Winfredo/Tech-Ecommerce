@@ -2,9 +2,9 @@ import React from "react";
 
 const Gadgets = () => {
   return (
-    <div className="w-full h-[430px] flex flex-row ">
+    <div className="w-full  flex flex-row ">
       <div
-        className="h-[230px] w-[720px] flex flex-col
+        className=" flex flex-col
        items-start justify-normal"
       >
         {" "}
