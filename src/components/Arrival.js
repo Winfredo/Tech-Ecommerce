@@ -60,6 +60,34 @@ const Arrival = () => {
       description: "Silver (MK2L3) 2021",
       price: "$398",
     },
+    {
+      icon: <AiOutlineHeart size={25} />,
+      imageUrl: "./images/iphone14.png",
+      text: "Apple iPhone 14 Pro 512GB",
+      description: "(MQ2333)",
+      price: "$1437",
+    },
+    {
+      icon: <AiOutlineHeart size={25} />,
+      imageUrl: "./images/galaxybuds.png",
+      text: "Galaxy Buds FE",
+      description: "Graphite",
+      price: "$99.99",
+    },
+    {
+      icon: <AiOutlineHeart size={25} />,
+      imageUrl: "./images/galaxywatch.png",
+      text: "Samsung Galaxy Watch6 Classic",
+      description: "47mm Black",
+      price: "$369",
+    },
+    {
+      icon: <AiOutlineHeart size={25} />,
+      imageUrl: "./images/camera.png",
+      text: "Blackmagic Pocket Cinema",
+      description: "Camera 6k",
+      price: "$2500",
+    },
   ];
 
   const Phones = ({ Icon, text, Desciption, Price, imageUrl }) => {
