@@ -8,6 +8,7 @@ import Arrival from './components/Arrival';
 import PopularProducts from './components/PopularProducts';
 import Discount from "./components/Discount"
 import SubFooter from './components/SubFooter';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
       <PopularProducts />
       <Discount />
       <SubFooter />
-
+      <Footer />
 
       <div className='mt-[3rem] bg-[#fafafa] w-full h-[1000px]'>
 
