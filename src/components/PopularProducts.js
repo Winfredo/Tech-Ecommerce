@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const PopularProducts = () => {
   const Popular = ({
     Name,
@@ -13,7 +14,7 @@ const PopularProducts = () => {
       <div className="flex items-center my-3 lg:my-0 justify-evenly mx-auto ">
         <div
           style={{ backgroundColor: Colour }}
-          className="h-[500px] text-left "
+          className="h-[500px] w-[300px] lg:w-fit text-left "
         >
           <div className="flex items-center justify-center">
             <img src={imageUrl} alt="iphone" className="h-[250px] w-[230px] " />
