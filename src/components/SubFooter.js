@@ -87,7 +87,7 @@ const SubFooter = () => {
         <img
           src="./images/Group1.png"
           alt="iphone"
-          className="hidden lg:flex lg:w-[270px] lg:h-[500px]"
+          className="hidden lg:flex lg:w-[280px] lg:h-[500px]"
         />
 
         <div className="flex flex-col items-center justify-center absolute inset-0 lg:static lg:w-full">

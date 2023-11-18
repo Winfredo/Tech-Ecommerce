@@ -23,8 +23,6 @@ function App() {
       <Discount />
       <SubFooter />
       <Footer />
-
-      <div className="mt-[3rem] bg-[#fafafa] w-full h-[1000px]"></div>
     </main>
   );
 }
