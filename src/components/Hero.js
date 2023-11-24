@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -12,7 +13,7 @@ const Hero = () => {
           <p className="text-[#A5A3A6] text-sm mb-4">
             Created to change everything for the better. For everyone
           </p>
-          <button className=" w-[90px] h-[35px] text-[12px] text-white border-[1px]	rounded-md mb-10 lg:mb-0">Shop Now</button>
+          <Link to={"/products"} className=" w-[90px] h-[35px] text-[12px] text-white border-[1px] flex items-center justify-center	rounded-md mb-10 lg:mb-0">Shop Now</Link>
         </div>
 
         <div className="mr-5">
