@@ -10,6 +10,7 @@ import Discount from "./components/Discount";
 import SubFooter from "./components/SubFooter";
 import Footer from "./components/Footer";
 
+
 function App() {
   return (
     <main className="">

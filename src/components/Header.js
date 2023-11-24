@@ -16,7 +16,7 @@ const Header = () => {
             className=" h-[50px] mr-10 ml-5 w-[170px]"
           />
 
-            <div className="hidden  lg:flex flex-1 items-center justify-between">
+            <div className="hidden lg:flex flex-1 items-center justify-between">
                 <input
                   type="text"
                   placeholder="Search"
