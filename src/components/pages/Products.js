@@ -10,7 +10,7 @@ const Products = () => {
       <SubHeader />
 
       <div className="w-full h-[5rem]  ">
-        <div className="max-w-[1250px] bg-red-300  h-full mx-auto">
+        <div className="max-w-[1250px]  h-full mx-auto">
           <div className="hidden   mx-5  lg:flex flex-1 pt-7 text-[#a4a4a4] text-sm font-light">
             <p className="flex items-center justify-center mr-10">
               Home <LiaGreaterThanSolid className="ml-10" />
