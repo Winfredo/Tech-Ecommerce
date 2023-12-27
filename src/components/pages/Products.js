@@ -9,34 +9,42 @@ const Products = () => {
       <Header />
       <SubHeader />
 
-      <div className="w-full h-[5rem] bg-green-200">
-        <div className="max-w-[1250px] bg-red-200  h-full mx-auto">
-          <div className="hidden  bg-red-500 mx-5  lg:flex flex-1 pt-7 text-[#a4a4a4] text-sm font-light">
+      <div className="w-full h-[5rem]  ">
+        <div className="max-w-[1250px]  h-full mx-auto">
+          <div className="hidden   mx-5  lg:flex flex-1 pt-7 text-[#a4a4a4] text-sm font-light">
             <p className="flex items-center justify-center mr-10">
-              Home <LiaGreaterThanSolid className="ml-10"/>
-
+              Home <LiaGreaterThanSolid className="ml-10" />
             </p>
             <p className="flex items-center justify-center mr-10">
               Catalog <LiaGreaterThanSolid className="ml-10" />
             </p>
-            <p className="text-black">Smartphones</p>
+            <p className="text-[#a4a4a4] font-light">Smartphones</p>
           </div>
 
-        {/* for the small screen view */}
-          <div>
-          <button className="h-[30px] w-[150px] border-2">
-            Filters
-          </button>
+          {/* for the small screen view */}
+          <div className="md:hidden bg-red-300 flex justify-center  ">
+            <button className="h-[50px] w-[150px] border-2">Filters</button>
 
-          <button className="border-2 h-[30px] w-[150px]">
-            By Rating
-          </button>
+            <button className="border-2 h-[50px] w-[150px]">By Rating</button>
+          </div>
         </div>
-        </div>
-       
 
-        <div className="bg-red-200 h-[80rem] w-full">
+        <div className=" h-[80rem] w-full">
+          <div className="lg:max-w-[1250px] h-full  bg-green-300 pt-5 mx-auto">
+            <div className="w-[150px] h-full bg-white ml-5">
+              <div className="flex justify-between items-center text-[14px] pb-1 border-b border-[#b5b5b5]">
+                <p className="">Price</p>
+                <p>
+                  <LiaGreaterThanSolid />
+                </p>
+              </div>
 
+              <div className="flex justify-between items-center text-[10px] text-[#b5b5b5]">
+                <p>From</p>
+                <p>To</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
