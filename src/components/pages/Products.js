@@ -2,9 +2,13 @@ import React from "react";
 import Header from "../Header";
 import SubHeader from "../SubHeader";
 import { LiaGreaterThanSolid } from "react-icons/lia";
+import { InputNumber, Space } from 'antd';
 
 const Products = () => {
+
+  
   return (
+    
     <div>
       <Header />
       <SubHeader />
@@ -43,10 +47,14 @@ const Products = () => {
                 <p>From</p>
                 <p>To</p>
               </div>
+              
+              <InputNumber size="small" min={1} max={100000}  />
+
             </div>
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
