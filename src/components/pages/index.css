@@ -1,0 +1,22 @@
+.ant-slider .ant-slider-track {
+  background-color: black !important;
+  z-index: 2 ;
+}
+
+.ant-slider-handle .ant-slider-handle-1 {
+  background-color: red;
+}
+
+.ant-slider-step{
+    background-color: #cecece !important;
+  
+}
+
+.ant-slider-handle .ant-slider-handle-1::before{
+    background-color: red !important;
+}
+
+.ant-slider .ant-slider-handle::after{
+    background-color: black !important; 
+    box-shadow: none !important;
+}
