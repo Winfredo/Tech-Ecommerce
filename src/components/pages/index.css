@@ -1,22 +1,33 @@
 .ant-slider .ant-slider-track {
   background-color: black !important;
-  z-index: 2 ;
+  z-index: 2;
 }
 
 .ant-slider-handle .ant-slider-handle-1 {
   background-color: red;
 }
 
-.ant-slider-step{
-    background-color: #cecece !important;
-  
+.ant-slider-step {
+  background-color: #cecece !important;
 }
 
-.ant-slider-handle .ant-slider-handle-1::before{
-    background-color: red !important;
+.ant-slider-handle .ant-slider-handle-1::before {
+  background-color: red !important;
 }
 
-.ant-slider .ant-slider-handle::after{
-    background-color: black !important; 
-    box-shadow: none !important;
+.ant-slider .ant-slider-handle::after {
+  background-color: black !important;
+  box-shadow: none !important;
+}
+
+.ant-menu-light.ant-menu-inline .ant-menu-sub.ant-menu-inline{
+    background-color: white !important;
+}
+
+.ant-menu-light.ant-menu-root.ant-menu-inline{
+    border: none;
+}
+.ant-input-number-input-wrap{
+    font-size: 14px;
+    font-weight: 300;
 }
