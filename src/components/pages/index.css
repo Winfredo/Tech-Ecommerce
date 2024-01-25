@@ -31,3 +31,20 @@
     font-size: 14px;
     font-weight: 300;
 }
+/* .ant-checkbox-inner .ant-checkbox-checked{
+    background-color: black !important;
+    
+} */
+
+.ant-input-number-outlined:hover{
+   border:1px solid #cecece;
+}
+
+
+.ant-input-number-outlined ::after{
+    border:1px solid #cecece !important;
+ }
+
+ .ant-checkbox-input:hover{
+    border:1px solid #cecece !important;
+ }
