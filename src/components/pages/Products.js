@@ -5,6 +5,7 @@ import { LiaGreaterThanSolid } from "react-icons/lia";
 import { InputNumber } from "antd";
 import { Slider, Menu, Checkbox } from "antd";
 import "./index.css";
+import Arrival from "../Arrival";
 
 const { SubMenu } = Menu;
 
@@ -15,7 +16,7 @@ const Products = () => {
     setSelectedOption(checkedValues);
   };
 
-  const options = [
+  const phoneoptions = [
     "Apple",
     "Samsung",
     "Huawei",
@@ -28,6 +29,42 @@ const Products = () => {
     "Xiaomi",
 
 
+  ];
+
+  const memoryOptions = [
+    "16GB",
+    "32GB",
+    "64GB",
+    "128GB",
+    "512GB",
+    "1TB",
+    "2TB",
+
+  ];
+
+  const options = [
+    "IP65 rating",
+    "IP66 rating",
+    "IP67 rating",
+  ];
+
+  const Screenoptions = [
+    "AMOLED",
+    "OLED",
+    "LCD",
+    "Retina Display",
+  ];
+
+  const Batteryoptions = [
+    "5000MaH",
+    "6000MaH",
+   
+  ];
+
+  const Diagonaloptions = [
+    "13 inch",
+    "14 inch",
+   
   ];
 
   const [inputValue1, setInputValue1] = useState(40);
@@ -113,8 +150,56 @@ const Products = () => {
                       className="mb-7"
                     />
                   </SubMenu>
+                  <Menu.Divider />
+
 
                   <SubMenu key="sub2" title="Brand">
+                    <Menu.Divider />
+                    <input
+                      placeholder="Search"
+                      className="bg-[#f5f5f5] h-[30px] w-[220px] pl-3 rounded-md my-3  border-none outline-none"
+                    />
+                    <Checkbox.Group
+                      onChange={handleOptionChange}
+                      value={selectedOption}
+                      style={{ display: "flex", flexDirection: "column", paddingBottom: "30px" }}
+                    >
+                      {phoneoptions.map((option) => (
+                        <Checkbox key={option} value={option}
+                        style={{ marginBottom: "5px", paddingBottom: "2px", fontWeight: "200" }}
+
+                        >
+                          {option}
+
+                        </Checkbox>
+                      ))}
+                    </Checkbox.Group>
+                  </SubMenu>
+                  <Menu.Divider />
+                  <SubMenu key="sub4" title="Built-in memory">
+                  <Menu.Divider />
+                    <input
+                      placeholder="Search"
+                      className="bg-[#f5f5f5] h-[30px] w-[220px] pl-3 rounded-md my-3  border-none outline-none"
+                    />
+                    <Checkbox.Group
+                      onChange={handleOptionChange}
+                      value={selectedOption}
+                      style={{ display: "flex", flexDirection: "column", paddingBottom: "30px" }}
+                    >
+                      {memoryOptions.map((option) => (
+                        <Checkbox key={option} value={option}
+                        style={{ marginBottom: "5px", paddingBottom: "2px", fontWeight: "200" }}
+
+                        >
+                          {option}
+
+                        </Checkbox>
+                      ))}
+                    </Checkbox.Group>
+                  </SubMenu>
+                  <Menu.Divider />
+                  <SubMenu key="sub5" title="Protective Class">
                     <Menu.Divider />
                     <input
                       placeholder="Search"
@@ -137,20 +222,88 @@ const Products = () => {
                     </Checkbox.Group>
                   </SubMenu>
                   <Menu.Divider />
-                  <SubMenu key="sub4" title="Navigation Three">
-                    <Menu.Item key="9">Option 9</Menu.Item>
-                    <Menu.Item key="10">Option 10</Menu.Item>
-                    <Menu.Item key="11">Option 11</Menu.Item>
-                    <Menu.Item key="12">Option 12</Menu.Item>
+                  <SubMenu key="sub6" title="Screen Diagonal">
+                    <Menu.Divider />
+                    <input
+                      placeholder="Search"
+                      className="bg-[#f5f5f5] h-[30px] w-[220px] pl-3 rounded-md my-3  border-none outline-none"
+                    />
+                    <Checkbox.Group
+                      onChange={handleOptionChange}
+                      value={selectedOption}
+                      style={{ display: "flex", flexDirection: "column", paddingBottom: "30px" }}
+                    >
+                      {Diagonaloptions.map((option) => (
+                        <Checkbox key={option} value={option}
+                        style={{ marginBottom: "5px", paddingBottom: "2px", fontWeight: "200" }}
+
+                        >
+                          {option}
+
+                        </Checkbox>
+                      ))}
+                    </Checkbox.Group>
                   </SubMenu>
-                  <SubMenu key="grp" title="Group">
-                    <Menu.Item key="13">Option 13</Menu.Item>
-                    <Menu.Item key="14">Option 14</Menu.Item>
+                  <Menu.Divider />
+                  <SubMenu key="sub7" title="Screen Type">
+                    <Menu.Divider />
+                    <input
+                      placeholder="Search"
+                      className="bg-[#f5f5f5] h-[30px] w-[220px] pl-3 rounded-md my-3  border-none outline-none"
+                    />
+                    <Checkbox.Group
+                      onChange={handleOptionChange}
+                      value={selectedOption}
+                      style={{ display: "flex", flexDirection: "column", paddingBottom: "30px" }}
+                    >
+                      {Screenoptions.map((option) => (
+                        <Checkbox key={option} value={option}
+                        style={{ marginBottom: "5px", paddingBottom: "2px", fontWeight: "200" }}
+
+                        >
+                          {option}
+
+                        </Checkbox>
+                      ))}
+                    </Checkbox.Group>
                   </SubMenu>
+                  <Menu.Divider />
+                  <SubMenu key="sub8" title="Battery Capacity">
+                    <Menu.Divider />
+                    <input
+                      placeholder="Search"
+                      className="bg-[#f5f5f5] h-[30px] w-[220px] pl-3 rounded-md my-3  border-none outline-none"
+                    />
+                    <Checkbox.Group
+                      onChange={handleOptionChange}
+                      value={selectedOption}
+                      style={{ display: "flex", flexDirection: "column", paddingBottom: "30px" }}
+                    >
+                      {Batteryoptions.map((option) => (
+                        <Checkbox key={option} value={option}
+                        style={{ marginBottom: "5px", paddingBottom: "2px", fontWeight: "200" }}
+
+                        >
+                          {option}
+
+                        </Checkbox>
+                      ))}
+                    </Checkbox.Group>
+                  </SubMenu>
+                  
+                 
                 </Menu>
+              </div>
+              {/* second div will start here */}
+              <div className="w-full h-full bg-green-200 ml-[20px]">
+                <div>
+                  <p><span className="text-[#b5b5b5] font-light text-[13px] ">Selected Products:</span> 85</p>
+                  
+                </div>
               </div>
             </div>
             {/* the shid ends here */}
+            
           </div>
         </div>
       </div>
@@ -160,104 +313,3 @@ const Products = () => {
 
 export default Products;
 
-// import React, { useState } from "react";
-// import Header from "../Header";
-// import SubHeader from "../SubHeader";
-// import { LiaGreaterThanSolid } from "react-icons/lia";
-// import { InputNumber } from "antd";
-// import { Slider, Menu } from "antd";
-// import "./index.css";
-
-// const Products = () => {
-
-//   const [inputValue1, setInputValue1] = useState(40);
-//   const [inputValue2, setInputValue2] = useState(30);
-//   return (
-//     <div>
-//       <Header />
-//       <SubHeader />
-
-//       <div className="w-full h-[5rem]  ">
-//         <div className="max-w-[1250px]  h-full mx-auto">
-//           <div className="hidden mx-5 lg:flex flex-1 pt-7 text-[#a4a4a4] text-sm font-light">
-//             <p className="flex items-center justify-center mr-10">
-//               Home <LiaGreaterThanSolid className="ml-10" />
-//             </p>
-//             <p className="flex items-center justify-center mr-10">
-//               Catalog <LiaGreaterThanSolid className="ml-10" />
-//             </p>
-//             <p className="text-[#a4a4a4] font-light">Smartphones</p>
-//           </div>
-
-//           {/* for the small screen view */}
-//           <div className="md:hidden bg-red-300 flex justify-center  ">
-//             <button className="h-[50px] w-[150px] border-2">Filters</button>
-
-//             <button className="border-2 h-[50px] w-[150px]">By Rating</button>
-//           </div>
-//         </div>
-
-//         <div className=" h-[80rem] w-full">
-//           <div className="lg:max-w-[1250px] h-full  bg-green-300 pt-5 mx-auto">
-//             {/* time to flex the shid */}
-//             <div className="h-full flex ">
-//               <div className="w-[230px] h-full mr-20 bg-white ml-5">
-//                 <div className="flex justify-between items-center text-[14px] pb-3 border-b border-[#b5b5b5]">
-//                   <p className="">Price</p>
-//                   <p>
-//                     <LiaGreaterThanSolid />
-//                   </p>
-//                 </div>
-
-//                 <div className="flex justify-between py-3 items-center text-[12px] text-[#b5b5b5]">
-//                   <p>From</p>
-//                   <p>To</p>
-//                 </div>
-
-//                 <div className="flex justify-between">
-//                   <InputNumber
-//                     size="large"
-//                     min={0}
-//                     max={5000}
-//                     className="rounded-[4px]"
-//                     value={inputValue1}
-//                     onChange={setInputValue1}
-//                   />
-//                   <p className="pt-2 text-[#a4a4a4] ">-</p>
-//                   <InputNumber
-//                     size="large"
-//                     min={0}
-//                     max={5000}
-//                     className="rounded-[4px]"
-//                     value={inputValue2}
-//                     onChange={setInputValue2}
-//                   />
-//                 </div>
-//                 <Slider
-//                   max={5000}
-//                   range={{
-//                     draggableTrack: true,
-//                   }}
-//                   value={[inputValue1, inputValue2]}
-//                   onChange={(values) => {
-//                     setInputValue1(values[0]);
-//                     setInputValue2(values[1]);
-//                   }}
-//                 />
-//               </div>
-//               {/* this is where the div for the whole thing ends */}
-
-//               <div>
-//                 <p>winfred</p>
-
-//               </div>
-//             </div>
-//             {/* the shid ends here */}
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Products;
