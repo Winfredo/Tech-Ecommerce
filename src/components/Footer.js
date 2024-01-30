@@ -20,7 +20,7 @@ const Footer = () => {
       <div className=" flex  w-full flex-col md:flex-row  items-center justify-evenly" >
         <div className=" w-[320px] flex flex-col  items-center md:items-start justify-center md:mb-20 ">
           <img
-            src="./images/logo-no-background.png"
+            src="./images/LogoWhite.png"
             alt="logo"
             className=" h-[40px] mt-5 md:mt-0  w-[120px]"
           />
