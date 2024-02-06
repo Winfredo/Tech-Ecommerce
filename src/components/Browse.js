@@ -44,7 +44,7 @@ const Browse = () => {
 
         {/* div for the boxes */}
 
-        <div className="">
+        
           <div className="grid grid-cols-2 mx-auto md:flex md:items-center  pb-20 md:justify-evenly  lg:justify-between lg:px-3">
             <Box Icon={<BsPhone size={30} />} name={"Phone"} />
             <Box Icon={<BsSmartwatch size={30} />} name={"Smart Watches"} />
@@ -55,7 +55,7 @@ const Browse = () => {
           </div>
         </div>
       </div>
-    </div>
+  
   );
 };
 

@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 
 const PopularProducts = () => {
@@ -29,7 +30,7 @@ const PopularProducts = () => {
             </p>
             <p className="text-[#A5A3A6] text-sm mr-5">{text}</p>
             {
-              <button
+              <Link to={"/products"}><button
                 style={{
                   color: TextColour,
                   border: `1px solid ${borderColour}`,
@@ -37,7 +38,7 @@ const PopularProducts = () => {
                 className="w-[120px] h-[45px] text-sm  text-white border-[1px] mt-5 rounded-md"
               >
                 Shop Now
-              </button>
+              </button></Link>
             }
           </div>
         </div>
