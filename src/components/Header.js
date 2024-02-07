@@ -3,6 +3,8 @@ import React from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { RxPerson } from "react-icons/rx";
+import {Link} from "react-router-dom"
+// import { CiSearch } from "react-icons/ci";
 
 
 const Header = () => {
@@ -10,11 +12,11 @@ const Header = () => {
     <div className="w-full h-[88px] bg-white ">
       <div className=" h-full flex lg:max-w-[1250px]   mx-auto  ">
           <div className="flex flex-1 items-center justify-between">
-          <img
+          <Link to={"/"}><img
             src="./images/Logo.png"
             alt="logo"
             className=" mr-10 ml-5 "
-          />
+          /></Link>
 
             <div className="hidden lg:flex flex-1 items-center justify-between">
                 <input
