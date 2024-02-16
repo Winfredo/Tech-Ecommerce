@@ -101,7 +101,7 @@ const Gadgets = () => {
         <div className="bg-[#ededed] lg:w-full lg:h-fit mx-auto h-[360px] w-[300px] flex-col-reverse flex lg:flex-row lg:items-center lg:justify-between">
           {/* macbook pro starts here */}
        
-          <div className=" lg:ml-20 h-[320px]  w-[300px] text-center lg:text-left lg:w-fit lg:h-fit ">
+          <div className=" lg:ml-20 h-[430px] w-[300px] text-center lg:text-left lg:w-fit lg:h-fit ">
             <p className="text-[1.8rem] font-extralight">
               Macbook <span className="font-semibold">Air</span>
             </p>
@@ -120,7 +120,7 @@ const Gadgets = () => {
           <div className=" pr-5 lg:pr-0 ">
             <img
               src="./images/macbookpro.png"
-              alt="a macbook pro"
+              alt="a macbook air"
               className="h-[430px] hidden lg:flex "
             />
 

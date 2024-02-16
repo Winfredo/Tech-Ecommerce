@@ -21,7 +21,7 @@ const Discount = () => {
         {
             icon: <AiOutlineHeart size={25}/>,
             imageUrl: "./images/applewatch.png",
-            text: "Apple Watch Series 9 GPS 41mm",
+            text: "Apple Watch Series 9  41mm",
             description: "Starlight Aluminium Case",
             price: "$600"
         },
@@ -37,7 +37,7 @@ const Discount = () => {
   const Phones = ({ Icon, text, Desciption, Price, imageUrl }) => {
     return (
         <div className="w-full  flex lg:justify-between md:justify-evenly ">
-        <div className="w-[220px] h-[370px] rounded-xl bg-[#ededed] mb-5 mx-auto">
+        <div className="md:w-[220px] h-[370px] rounded-xl bg-[#ededed] mb-5 mx-auto">
           <div className="flex justify-end  my-5 mr-5">{Icon}</div>
           <div className="flex flex-col items-center justify-center">
             <img src={imageUrl} alt="iphone" />
