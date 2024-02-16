@@ -21,7 +21,7 @@ const Arrival = () => {
     {
       icon: <AiOutlineHeart size={25} />,
       imageUrl: "./images/applewatch.png",
-      text: "Apple Watch series 9 GPS 41mm",
+      text: "Apple Watch series 9 41mm",
       description: "Starlight Aluminium Case",
       price: "$399",
     },
@@ -35,14 +35,14 @@ const Arrival = () => {
     {
       icon: <AiOutlineHeart size={25} />,
       imageUrl: "./images/galaxywatch.png",
-      text: "Samsung Galaxy Watch6 Classic",
+      text: "Samsung Galaxy Watch6 ",
       description: "47mm Black",
       price: "$369",
     },
     {
       icon: <FcLike size={25} />,
       imageUrl: "./images/galaxyfold.png",
-      text: "Galaxy Z Fold Unlocked | 256GB",
+      text: "Galaxy Z Fold  | 256GB",
       description: "Phantom Black",
       price: "$1799",
     },
@@ -77,7 +77,7 @@ const Arrival = () => {
     {
       icon: <AiOutlineHeart size={25} />,
       imageUrl: "./images/galaxywatch.png",
-      text: "Samsung Galaxy Watch6 Classic",
+      text: "Samsung Galaxy Watch6 ",
       description: "47mm Black",
       price: "$369",
     },
@@ -93,7 +93,7 @@ const Arrival = () => {
   const Phones = ({ Icon, text, Desciption, Price, imageUrl }) => {
     return (
       <div className="flex justify-between ">
-        <div className="w-[220px] h-[370px] rounded-xl bg-[#ededed]  mb-10  mx-auto">
+        <div className="md:w-[220px]  h-[370px]  rounded-xl bg-[#ededed]  mb-10  mx-auto">
           <div className="flex justify-end  my-5 mr-5">{Icon}</div>
           <div className="flex flex-col items-center justify-center">
             <img src={imageUrl} alt="iphone" />

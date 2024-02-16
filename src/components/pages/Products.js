@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import Header from "../Header";
 import SubHeader from "../SubHeader";
 import { LiaGreaterThanSolid } from "react-icons/lia";
-import { Slider, Menu, Checkbox, InputNumber, Select, Space } from "antd";
+import { Slider, Menu, Checkbox, InputNumber, Select, Space ,Button, Flex} from "antd";
 import "./index.css";
 import Arrivals2 from "../Arrivals2";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import Footer from "../Footer";
-
 
 const { SubMenu } = Menu;
 
@@ -68,9 +67,11 @@ const Products = () => {
       <div className="w-full  bg-white ">
         <div className="max-w-[1250px] pb-7 h-full mx-auto">
           <div className="hidden  mx-5 lg:flex flex-1 pt-7  text-[#a4a4a4] text-sm font-light">
-            <Link to={"/"}><p className="flex items-center justify-center mr-10">
-              Home <LiaGreaterThanSolid className="ml-10" />
-            </p></Link>
+            <Link to={"/"}>
+              <p className="flex items-center justify-center mr-10">
+                Home <LiaGreaterThanSolid className="ml-10" />
+              </p>
+            </Link>
             <p className="flex items-center justify-center mr-10">
               Catalog <LiaGreaterThanSolid className="ml-10" />
             </p>
@@ -79,9 +80,28 @@ const Products = () => {
 
           {/* for the small screen view */}
           <div className="md:hidden  flex justify-center  ">
-            <button className="h-[50px] w-[150px] border-2">Filters</button>
-
-            <button className="border-2 h-[50px] w-[150px]">By Rating</button>
+            <button className="h-[50px] w-[200px] rounded-lg mr-5 border">Filters</button>
+            <Space wrap>
+              <Select
+                defaultValue="By rating"
+                style={{
+                  width: 200,
+                  height: 50,
+                  
+                }}
+                onChange={handleChange}
+                options={[
+                  {
+                    value: "by price",
+                    label: "By price",
+                  },
+                  {
+                    value: "by rating",
+                    label: "By rating",
+                  },
+                ]}
+              />
+            </Space>
           </div>
         </div>
 
@@ -334,8 +354,7 @@ const Products = () => {
                     </span>
                     85
                   </p>
-                  <Space wrap>
-                    
+                  <Space wrap className="hidden lg:flex ">
                     <Select
                       defaultValue="By rating"
                       style={{
@@ -347,14 +366,11 @@ const Products = () => {
                         {
                           value: "by price",
                           label: "By price",
-                        }, 
+                        },
                         {
                           value: "by rating",
                           label: "By rating",
                         },
-
-                     
-                       
                       ]}
                     />
                   </Space>
@@ -368,13 +384,9 @@ const Products = () => {
           </div>
           <Footer />
         </div>
-        
       </div>
-      
     </div>
   );
 };
 
 export default Products;
-
-

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-r from-[#211C24] to-[#27212b]   w-screen h-screen">
+    <div className="bg-gradient-to-r from-[#211C24] to-[#27212b]   w-screen pt-[253px]">
       <div className=" w-full h-full flex flex-col  justify-evenly lg:max-w-[1250px] mx-auto lg:flex lg:flex-row flex-1 lg:items-center lg:justify-between">
         <div className="flex flex-col ml-5  items-center lg:items-start">
           <p className="text-[#A5A3A6] ">Pro.Beyond.</p>
