@@ -7,7 +7,7 @@ import { Pagination } from "antd";
 const Arrival = () => {
   const Phones = ({ Icon, text, Desciption, Price, imageUrl }) => {
     return (
-      <div className="w-[250px]  h-[350px] lg:w-[285px] lg:h-[370px] rounded-xl bg-[#ededed] mb-3  ">
+      <div className="w-[250px]  h-[350px] lg:w-[260px] lg:h-[370px] rounded-xl bg-[#ededed] mb-3  ">
         <div className="flex justify-end  my-5 mr-5">{Icon}</div>
         <div className="flex flex-col items-center justify-center">
           <img src={imageUrl} alt="iphone" />
@@ -24,7 +24,8 @@ const Arrival = () => {
 
   return (
     <div className=" mt-7">
-      <div className="sm:grid sm:grid-cols-1 md:grid md:grid-cols-2 lg:flex  lg:justify-between mb-4">
+
+<div className="sm:grid sm:grid-cols-2 md:grid md:grid-cols-2 lg:flex  lg:justify-between mb-4">
         <Phones
           Icon={<AiOutlineHeart size={25} />}
           imageUrl={"./images/iphone14.png"}
@@ -51,7 +52,7 @@ const Arrival = () => {
 
       {/* second batch */}
 
-      <div className="flex justify-between mb-4">
+      <div className="sm:grid sm:grid-cols-2 md:grid md:grid-cols-2 lg:flex  lg:justify-between mb-4">
         <Phones
           Icon={<AiOutlineHeart size={25} />}
           imageUrl={"./images/airpodsmax 2.png"}
@@ -78,7 +79,7 @@ const Arrival = () => {
 
       {/* third batch */}
 
-      <div className="flex justify-between">
+      <div className="sm:grid sm:grid-cols-2 md:grid md:grid-cols-2 lg:flex  lg:justify-between mb-4">
         <Phones
           Icon={<AiOutlineHeart size={25} />}
           imageUrl={"./images/galaxybuds.png"}
@@ -102,6 +103,7 @@ const Arrival = () => {
           Price={"$1437"}
         />
       </div>
+     
       <div className="flex justify-center mt-4">
         <Pagination defaultCurrent={1} total={50} className="pagination" />
       </div>
