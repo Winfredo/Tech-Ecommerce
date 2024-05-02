@@ -192,7 +192,6 @@ const Products = () => {
                   <input
                     type="search"
                     placeholder="Search"
-                    className="bg-[#f5f5f5] h-[30px] w-[220px] pl-3 rounded-md my-3   border-none outline-none"
                   />
                   <Checkbox.Group
                     onChange={handleOptionChange}
@@ -224,7 +223,6 @@ const Products = () => {
                   <input
                     type="search"
                     placeholder="Search"
-                    className="bg-[#f5f5f5] h-[30px] w-[220px] pl-3 rounded-md my-3  border-none outline-none"
                   />
                   <Checkbox.Group
                     onChange={handleOptionChange}
@@ -256,7 +254,6 @@ const Products = () => {
                   <input
                     type="search"
                     placeholder="Search"
-                    className="bg-[#f5f5f5] h-[30px] w-[220px] pl-3 rounded-md my-3  border-none outline-none"
                   />
                   <Checkbox.Group
                     onChange={handleOptionChange}
@@ -287,7 +284,6 @@ const Products = () => {
                   <Menu.Divider />
                   <input
                     placeholder="Search"
-                    className="bg-[#f5f5f5] h-[30px] w-[220px] pl-3 rounded-md my-3  border-none outline-none"
                   />
                   <Checkbox.Group
                     onChange={handleOptionChange}
@@ -318,7 +314,6 @@ const Products = () => {
                   <Menu.Divider />
                   <input
                     placeholder="Search"
-                    className="bg-[#f5f5f5] h-[30px] w-[220px] pl-3 rounded-md my-3  border-none outline-none"
                   />
                   <Checkbox.Group
                     onChange={handleOptionChange}
@@ -349,7 +344,6 @@ const Products = () => {
                   <Menu.Divider />
                   <input
                     placeholder="Search"
-                    className="bg-[#f5f5f5] h-[30px] w-[220px] pl-3 rounded-md my-3  border-none outline-none"
                   />
                   <Checkbox.Group
                     onChange={handleOptionChange}

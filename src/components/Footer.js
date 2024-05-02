@@ -4,18 +4,11 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 
-
-
-
-
-
 const Footer = () => {
   return (
     <div className=" md:h-[500px] w-full bg-[#181313] ">
       <div className="max-w-[1250px] flex items-center justify-center  h-full mx-auto">
-        {/* the first part. the logo and the text beneath */}
-
-{/* grand finale */}
+       
       <div className="flex flex-1 flex-col ">
       <div className=" flex  w-full flex-col md:flex-row  items-center justify-evenly" >
         <div className=" w-[320px] flex flex-col  items-center md:items-start justify-center md:mb-20 ">
@@ -29,9 +22,7 @@ const Footer = () => {
             boutique-studio offers more than that.
           </p>
         </div>
-        {/* the first part ends here. */}
-
-        {/* second part starts here */}
+       
         <div className="text-center md:text-left my-3">
           <p className="font-semibold text-[16px] text-white pb-3">Services</p>
           <p className="font-light text-[14px] text-[#cfcfcf] pb-3">Bonus program</p>
@@ -41,9 +32,7 @@ const Footer = () => {
           <p className="font-light text-[14px] text-[#cfcfcf] pb-3">Non-cash account</p>
           <p className="font-light text-[14px] text-[#cfcfcf] pb-3">Payment</p>
         </div>
-        {/* second part ends here */}
-
-        {/* third part starts here */}
+       
         <div className="text-center md:text-left my-3">
           <p className="font-semibold text-[16px]  text-white pb-3">Assistance to the Buyer</p>
           <p className="font-light text-[14px] text-[#cfcfcf] pb-3">Find an order</p>
@@ -53,7 +42,7 @@ const Footer = () => {
           <p className="font-light text-[14px] text-[#cfcfcf] pb-3">Frequently asked questions</p>
           <p className="font-light text-[14px] text-[#cfcfcf] pb-3">Terms of use of this site</p> 
         </div>
-        {/* third part ends here */}
+        
         </div>
 
         <div className=" flex items-center justify-center mt-5 md:mt-0 md:justify-start md:ml-[5rem] lg:ml-[10rem] mb-5 md:mb-0">
@@ -64,15 +53,9 @@ const Footer = () => {
       
 
         </div>
-        {/* icons end */} 
       </div>
-      {/* grand finale ending */}
-
-
-       
       
       </div>
-      {/* div for the icons */}
      
     </div>
   );
