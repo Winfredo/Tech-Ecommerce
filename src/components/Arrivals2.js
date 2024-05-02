@@ -7,7 +7,7 @@ import { Pagination } from "antd";
 const Arrival = () => {
   const Phones = ({ Icon, text, Desciption, Price, imageUrl }) => {
     return (
-      <div className="w-[250px]  h-[350px] lg:w-[260px] lg:h-[370px] rounded-xl bg-[#ededed] mb-3  ">
+      <div className="md:w-[220px] h-[370px] rounded-xl bg-[#ededed] mb-3  ">
         <div className="flex justify-end  my-5 mr-5">{Icon}</div>
         <div className="flex flex-col items-center justify-center">
           <img src={imageUrl} alt="iphone" />

@@ -62,8 +62,8 @@ const Products = () => {
 
   const Diagonaloptions = ["13 inch", "14 inch"];
 
-  const [inputValue1, setInputValue1] = useState(40);
-  const [inputValue2, setInputValue2] = useState(30);
+  const [inputValue1, setInputValue1] = useState(0);
+  const [inputValue2, setInputValue2] = useState(0);
 
   const handleClick = (e) => {
     console.log("click ", e);
@@ -192,6 +192,7 @@ const Products = () => {
                   <input
                     type="search"
                     placeholder="Search"
+                    className="inputBtn"
                   />
                   <Checkbox.Group
                     onChange={handleOptionChange}
@@ -223,6 +224,7 @@ const Products = () => {
                   <input
                     type="search"
                     placeholder="Search"
+                    className="inputBtn"
                   />
                   <Checkbox.Group
                     onChange={handleOptionChange}
@@ -254,6 +256,7 @@ const Products = () => {
                   <input
                     type="search"
                     placeholder="Search"
+                    className="inputBtn"
                   />
                   <Checkbox.Group
                     onChange={handleOptionChange}
@@ -283,7 +286,9 @@ const Products = () => {
                 <SubMenu key="sub6" title="Screen Diagonal">
                   <Menu.Divider />
                   <input
+                    type="search"
                     placeholder="Search"
+                    className="inputBtn"
                   />
                   <Checkbox.Group
                     onChange={handleOptionChange}
@@ -313,7 +318,9 @@ const Products = () => {
                 <SubMenu key="sub7" title="Screen Type">
                   <Menu.Divider />
                   <input
+                    type="search"
                     placeholder="Search"
+                    className="inputBtn"
                   />
                   <Checkbox.Group
                     onChange={handleOptionChange}
@@ -343,7 +350,9 @@ const Products = () => {
                 <SubMenu key="sub8" title="Battery Capacity">
                   <Menu.Divider />
                   <input
+                    type="search"
                     placeholder="Search"
+                    className="inputBtn"
                   />
                   <Checkbox.Group
                     onChange={handleOptionChange}

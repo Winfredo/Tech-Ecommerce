@@ -110,9 +110,9 @@ const Arrival = () => {
   };
 
   return (
-    <div className="w-full  mt-5 ">
+    <div className="w-full mt-5 ">
       <div className="lg:max-w-[1250px] h-full  mx-auto">
-        <div className="flex justify-between md:justify-normal ml-3 text-[13px] mb-10  font-semibold">
+        <div className="flex justify-between  md:justify-normal ml-3 text-[13px] mb-10  font-semibold">
           <p className="mr-5 border-b-2 border-black">New Arrival</p>
           <p className="mr-5 text-[#A5A3A6]">BestSeller</p>
           <p className="mr-5 text-[#A5A3A6]">Featured Products</p>
