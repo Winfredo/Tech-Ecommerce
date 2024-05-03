@@ -91,7 +91,7 @@ const Products = () => {
           {/* for the small screen view */}
           <div className="md:hidden flex justify-center">
             <button
-              className="h-[50px] w-[200px] rounded-lg mr-5 border"
+              className="h-[50px] w-[170px] rounded-lg mr-5 border"
               onClick={handleFilterButtonClick}
             >
               Filters
@@ -100,7 +100,7 @@ const Products = () => {
               <Select
                 defaultValue="By rating"
                 style={{
-                  width: 200,
+                  width: 170,
                   height: 50,
                 }}
                 onChange={handleChange}
@@ -118,25 +118,14 @@ const Products = () => {
             </Space>
           </div>
 
-          {isMenuOpen && (
-            <div>
-              {/* Menu content */}
-              <ul>
-                <li>Winfred</li>
-                <li>Nukpezah</li>
-              </ul>
-
-              {/* Close button */}
-              <button onClick={handleCloseButtonClick}>Close</button>
-            </div>
-          )}
+          
         </div>
       </div>
 
       <div className="w-full">
-        <div className="lg:max-w-[1250px] h-full p-5 mx-auto">
+        <div className="lg:max-w-[1250px] h-full flex justify-center items-center p-5 mx-auto">
           {/* time to flex the shid */}
-          <div className="h-full flex flex-col lg:flex-row">
+          <div className="h-full flex flex-col bg-red-200 md:flex-row">
             <div>
               <Menu
                 onClick={handleClick}
@@ -393,7 +382,7 @@ const Products = () => {
                   <Select
                     defaultValue="By rating"
                     style={{
-                      width: 200,
+                      width: 170,
                       height: 33,
                     }}
                     onChange={handleChange}
