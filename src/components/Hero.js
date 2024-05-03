@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="flex flex-col md:ml-5  items-center lg:items-start">
           <p className="text-[#A5A3A6] text-[23px] md:text-[17px] ">Pro.Beyond.</p>
           <p className="text-[80px] text-center  text-white font-thin">
-            IPhone 14 <span className=" font-semibold">Pro</span>
+            IPhone 14 <b>Pro</b>
           </p>
           <p className="text-[#A5A3A6] text-[17px] text-center md:text-sm mb-5">
             Created to change everything for the better. For everyone
