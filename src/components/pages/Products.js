@@ -125,8 +125,8 @@ const Products = () => {
       <div className="w-full">
         <div className="lg:max-w-[1250px] h-full flex justify-center items-center p-5 mx-auto">
           {/* time to flex the shid */}
-          <div className="h-full flex flex-col bg-red-200 md:flex-row">
-            <div>
+          <div className="h-full flex flex-col  md:flex-row">
+            <div className=" hidden md:block">
               <Menu
                 onClick={handleClick}
                 style={{ width: 256 }}
@@ -370,7 +370,7 @@ const Products = () => {
               </Menu>
             </div>
             {/* second div will start here */}
-            <div className="w-full  ml-[40px] ">
+            <div className="w-full  md:ml-[40px] ">
               <div className="flex justify-between  mt-2">
                 <p>
                   <span className="text-[#b5b5b5] font-light text-[13px] ">

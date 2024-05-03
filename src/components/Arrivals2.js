@@ -7,7 +7,7 @@ import { Pagination } from "antd";
 const Arrival = () => {
   const Phones = ({ Icon, text, Desciption, Price, imageUrl }) => {
     return (
-      <div className="w-[220px] h-[370px] rounded-xl bg-[#ededed] mb-3  ">
+      <div className=" px-3 h-[370px] rounded-xl bg-[#ededed] mb-3  ">
         <div className="flex justify-end  my-5 mr-5">{Icon}</div>
         <div className="flex flex-col items-center justify-center">
           <img src={imageUrl} alt="iphone" />
@@ -24,18 +24,18 @@ const Arrival = () => {
 
   return (
     <div className=" mt-7">
-      <div className=" md:flex md:flex-wrap  md:justify-between mb-4">
+      <div className=" w-full grid grid-cols-2  md:grid-cols-2 lg:grid-cols-3 gap-10  mb-10">
         <Phones
           Icon={<AiOutlineHeart size={25} />}
           imageUrl={"./images/iphone14.png"}
-          text={"Apple iPhone 14 Pro 512GB"}
+          text={"Apple iPhone 14 Pro "}
           Desciption={"(MQ2333)"}
           Price={"$1437"}
         />
         <Phones
           Icon={<AiOutlineHeart size={25} />}
           imageUrl={"./images/camera.png"}
-          text={"Blackmagic Pocket Cinema"}
+          text={"Blackmagic  Cinema"}
           Desciption={"Camera 6k"}
           Price={"$2500"}
         />
@@ -43,7 +43,7 @@ const Arrival = () => {
         <Phones
           Icon={<AiOutlineHeart size={25} />}
           imageUrl={"./images/applewatch.png"}
-          text={"Apple Watch series 9 GPS "}
+          text={"Apple Watch series 9  "}
           Desciption={"Starlight Case"}
           Price={"$399"}
         />
@@ -58,15 +58,22 @@ const Arrival = () => {
         <Phones
           Icon={<FcLike size={25} />}
           imageUrl={"./images/camera.png"}
-          text={"Blackmagic Pocket Cinema"}
+          text={"Blackmagic  Cinema"}
           Desciption={"Camera 6k"}
           Price={"$2500"}
+        />
+         <Phones
+          Icon={<AiOutlineHeart size={25} />}
+          imageUrl={"./images/iphone14.png"}
+          text={"Apple iPhone 14 Pro "}
+          Desciption={"(MQ2333)"}
+          Price={"$1437"}
         />
 
         <Phones
           Icon={<AiOutlineHeart size={25} />}
           imageUrl={"./images/applewatch.png"}
-          text={"Apple Watch series 9 GPS "}
+          text={"Apple Watch series 9  "}
           Desciption={"Starlight  Case"}
           Price={"$399"}
         />
@@ -81,7 +88,7 @@ const Arrival = () => {
         <Phones
           Icon={<FcLike size={25} />}
           imageUrl={"./images/camera.png"}
-          text={"Blackmagic Pocket Cinema"}
+          text={"Blackmagic  Cinema"}
           Desciption={"Camera 6k"}
           Price={"$2500"}
         />
