@@ -78,12 +78,12 @@ const Products = () => {
         <div className="max-w-[1250px] pb-7 h-full mx-auto">
           <div className="hidden mx-5 lg:flex flex-1 pt-7 text-[#a4a4a4] text-sm font-light">
             <Link to={"/"}>
-              <p className="flex items-center justify-center mr-10">
-                Home <LiaGreaterThanSolid className="ml-10" />
+              <p className="flex items-center justify-center mr-5">
+                Home <LiaGreaterThanSolid className="ml-5" />
               </p>
             </Link>
-            <p className="flex items-center justify-center mr-10">
-              Catalog <LiaGreaterThanSolid className="ml-10" />
+            <p className="flex items-center justify-center mr-5">
+              Catalog <LiaGreaterThanSolid className="ml-5" />
             </p>
             <p className="text-[#a4a4a4] font-light">Smartphones</p>
           </div>
@@ -373,7 +373,7 @@ const Products = () => {
             <div className="w-full  md:ml-[40px] ">
               <div className="flex justify-between  mt-2">
                 <p>
-                  <span className="text-[#b5b5b5] font-light text-[13px] ">
+                  <span className="text-[#b5b5b5] font-light text-[13px] mr-1">
                     Selected Products:
                   </span>
                   85
