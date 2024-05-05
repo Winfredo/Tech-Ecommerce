@@ -10,16 +10,7 @@ import Footer from "../Footer";
 
 const { SubMenu } = Menu;
 
-const Products = () => {
-  const [isMenuOpen, setMenuOpen] = useState(false);
-
-  const handleFilterButtonClick = () => {
-    setMenuOpen(true);
-  };
-
-  const handleCloseButtonClick = () => {
-    setMenuOpen(false);
-  };
+const Products = () => { 
 
   const handleChange = (value) => {
     console.log(`selected ${value}`);
@@ -92,7 +83,7 @@ const Products = () => {
           <div className="md:hidden flex justify-center">
             <button
               className="h-[50px] w-[170px] rounded-lg mr-5 border"
-              onClick={handleFilterButtonClick}
+             
             >
               Filters
             </button>
