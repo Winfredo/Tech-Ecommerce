@@ -31,11 +31,11 @@ const Details = () => {
 
   const Assurance = ({ icon, text1, text2 }) => {
     return (
-      <div className="h-[60px] w-[170px] rounded-md  flex items-center pl-5 mb-3">
-        <button className="w-10 h-10 rounded-[10%] bg-[#f6f6f6] flex justify-center items-center">{icon}</button>
+      <div className="h-[60px] w-[170px] rounded-md  flex items-center flex-col md:flex-row pl-5 mb-3">
+        <button className="md:w-[30%] md:h-[70%] w-[50%] h-[400px] rounded-[10%] bg-[#f6f6f6] flex justify-center items-center">{icon}</button>
         <div className="ml-3 flex flex-col text-sm">
-          <p className="text-[#717171]">{text1}</p>
-          <p className="text-[#000]">{text2}</p>
+          <p className="text-[#717171] text-[12px]">{text1}</p>
+          <p className="text-[#000] text-[12px]">{text2}</p>
         </div>
       </div>
     );
@@ -84,7 +84,7 @@ const Details = () => {
             className="w-[30%]"
           />
 
-          <div className="flex  flex-col  gap-3 w-[43%] ">
+          <div className="flex  flex-col  gap-3 md:w-[43%] w-[70%] h-full bg-red-200 ">
             <p className="font-semibold text-xl ">Apple iPhone 14 Pro Max</p>
             <p className="text-lg">
               $1399 <s className="text-[#a0a0a0] text-sm">$1499</s>
@@ -185,11 +185,11 @@ const Details = () => {
               cameras more...
             </p>
 
-            <div className="flex justify-between">
-              <button className="bg-white w-[48%] h-[45px] rounded-[4px] border border-black text-[13px]">
+            <div className="flex justify-between flex-col md:flex-row items-center space-y-5 md:space-y-0">
+              <button className="bg-white md:w-[48%] w-[90%] h-[45px] rounded-[4px] border border-black text-[13px]">
                 Add To WishList
               </button>
-              <button className="bg-black text-white w-[48%] h-[45px] rounded-[4px] text-[13px]">
+              <button className="bg-black text-white md:w-[48%] w-[90%] h-[45px] rounded-[4px] text-[13px]">
                 Add To Card
               </button>
             </div>
