@@ -113,7 +113,7 @@ const Products = () => {
         </div>
       </div>
 
-      <div className="w-full">
+      <div className="w-full bg-white">
         <div className="lg:max-w-[1250px] h-full flex justify-center items-center p-5 mx-auto">
           {/* time to flex the shid */}
           <div className="h-full flex flex-col  md:flex-row">
@@ -362,7 +362,7 @@ const Products = () => {
             </div>
             {/* second div will start here */}
             <div className="w-full  md:ml-[40px] ">
-              <div className="flex justify-between  mt-2">
+              <div className="flex justify-between">
                 <p>
                   <span className="text-[#b5b5b5] font-light text-[13px] mr-1">
                     Selected Products:

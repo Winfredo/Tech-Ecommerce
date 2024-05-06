@@ -29,7 +29,7 @@ const Details = () => {
 
   const Assurance = ({ icon, text1, text2 }) => {
     return (
-      <div className="h-[60px] w-[170px] rounded-md  flex items-center flex-col md:flex-row pl-5 mb-3">
+      <div className="h-[80px] md:h-[60px] w-[170px] rounded-md  flex items-center flex-col md:flex-row pl-5 mb-3">
         <button className="w-[30%] h-[70%]  rounded-[10%] bg-[#f6f6f6] flex justify-center items-center">
           {icon}
         </button>
@@ -81,7 +81,7 @@ const Details = () => {
           <img
             src="./images/iphone14pro.png"
             alt="iphone14pro"
-            className="w-[30%]"
+            className="w-[50%] md:w-[30%] "
           />
 
           <div className="flex flex-col gap-3 md:w-[43%] w-[95%] h-full ">
@@ -180,7 +180,7 @@ const Details = () => {
               />
             </div>
             <div className="w-[100%]">
-              <p className="text-[12px] text-[#6c6c6c] md:w-[100%] w-[60%] mx-auto">
+              <p className="text-[12px] text-[#6c6c6c] md:w-[100%] w-[72%] mx-auto">
                 Enhanced capabilities thanks to an enlarged display of 6.7
                 inches and work without recharging throughout the day.
                 Incredible photos in weak yes and in bright light using the new
@@ -188,10 +188,10 @@ const Details = () => {
               </p>
             </div>
             <div className="flex justify-between flex-col md:flex-row items-center space-y-5 md:space-y-0">
-              <button className="bg-white md:w-[48%] w-[60%] h-[45px] rounded-[4px] border border-black text-[13px]">
+              <button className="bg-white md:w-[48%] w-[75%] h-[45px] rounded-[4px] border border-black text-[13px]">
                 Add To WishList
               </button>
-              <button className="bg-black text-white md:w-[48%] w-[60%] h-[45px] rounded-[4px] text-[13px]">
+              <button className="bg-black text-white md:w-[48%] w-[75%] h-[45px] rounded-[4px] text-[13px]">
                 Add To Card
               </button>
             </div>
