@@ -77,11 +77,11 @@ const Details = () => {
       </div>
 
       <div className="pt-10 bg-white">
-        <div className="w-full max-w-[1250px] mx-auto flex flex-col md:flex-row gap-10  justify-center items-center">
+        <div className="w-full max-w-[1250px] mx-auto flex flex-col md:flex-row   justify-between items-center">
           <img
             src="./images/iphone14pro.png"
             alt="iphone14pro"
-            className="w-[50%] md:w-[30%] "
+            className="w-[50%] md:w-[35%] "
           />
 
           <div className="flex flex-col gap-3 md:w-[43%] w-[95%] h-full ">
@@ -214,6 +214,25 @@ const Details = () => {
               />
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="w-full h-[100%] bg-red-200">
+        <div className="max-w-[1250px] h-[500px] mx-auto mt-[60px] px-10 bg-green-200">
+          <h4 className="py-5 text-lg">Details</h4>
+          <p className="text-[13px] text-[#9d9d9d]">
+            Just as a book is judged by its cover, the first thing you notice
+            when you pick up a modern smartphone is the display. Nothing
+            surprising, because advanced technologies allow you to practically
+            level the display frames and cutouts for the front camera and
+            speaker, leaving no room for bold design solutions. And how good
+            that in such realities Apple everything is fine with displays. Both
+            critics and mass consumers always praise the quality of the picture
+            provided by the products of the Californian brand. And last year's
+            6.7-inch Retina panels, which had ProMotion, caused real admiration
+            for many.
+          </p>
+          <p className="py-5">Screen</p>
         </div>
       </div>
     </div>
