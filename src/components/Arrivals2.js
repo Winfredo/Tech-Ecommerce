@@ -3,6 +3,7 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { FcLike } from "react-icons/fc";
 import "../components/pages/index.css";
 import { Pagination } from "antd";
+import { Link } from "react-router-dom";
 
 const Arrival = () => {
   const Phones = ({ Icon, text, Desciption, Price, imageUrl }) => {
@@ -14,9 +15,9 @@ const Arrival = () => {
           <p className="text-sm mt-2">{text}</p>
           <p className="text-sm">{Desciption}</p>
           <p className="text-xl py-3">{Price}</p>
-          <button className="w-[150px] h-[35px] text-sm  text-white border-[1px] bg-black rounded-md">
+          <Link to={"/details"}><button className="w-[150px] h-[35px] text-sm  text-white border-[1px] bg-black rounded-md">
             Buy Now
-          </button>
+          </button></Link>
         </div>
       </div>
     );
