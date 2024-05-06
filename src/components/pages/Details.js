@@ -14,8 +14,6 @@ import { PiTruck } from "react-icons/pi";
 import { BsHouseCheck } from "react-icons/bs";
 import { ImCheckmark } from "react-icons/im";
 
-
-
 const Details = () => {
   const Features = ({ icon, text1, text2 }) => {
     return (
@@ -32,7 +30,9 @@ const Details = () => {
   const Assurance = ({ icon, text1, text2 }) => {
     return (
       <div className="h-[60px] w-[170px] rounded-md  flex items-center flex-col md:flex-row pl-5 mb-3">
-        <button className="md:w-[30%] md:h-[70%] w-[50%] h-[400px] rounded-[10%] bg-[#f6f6f6] flex justify-center items-center">{icon}</button>
+        <button className="w-[30%] h-[70%]  rounded-[10%] bg-[#f6f6f6] flex justify-center items-center">
+          {icon}
+        </button>
         <div className="ml-3 flex flex-col text-sm">
           <p className="text-[#717171] text-[12px]">{text1}</p>
           <p className="text-[#000] text-[12px]">{text2}</p>
@@ -76,7 +76,7 @@ const Details = () => {
         </div>
       </div>
 
-      <div className="pt-10">
+      <div className="pt-10 bg-white">
         <div className="w-full max-w-[1250px] mx-auto flex flex-col md:flex-row gap-10  justify-center items-center">
           <img
             src="./images/iphone14pro.png"
@@ -84,12 +84,14 @@ const Details = () => {
             className="w-[30%]"
           />
 
-          <div className="flex  flex-col  gap-3 md:w-[43%] w-[70%] h-full bg-red-200 ">
-            <p className="font-semibold text-xl ">Apple iPhone 14 Pro Max</p>
-            <p className="text-lg">
+          <div className="flex flex-col gap-3 md:w-[43%] w-[95%] h-full ">
+            <p className="font-semibold text-xl  text-center md:text-start">
+              Apple iPhone 14 Pro Max
+            </p>
+            <p className="text-lg text-center md:text-start">
               $1399 <s className="text-[#a0a0a0] text-sm">$1499</s>
             </p>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center justify-center md:justify-start gap-2 ">
               <p className="mr-2 ">Select Color: </p>
               <button className="w-8 h-8 rounded-[50%] bg-black transition-colors duration-300"></button>
               <button className="w-8 h-8 rounded-[50%] bg-[#781dbc] transition-colors duration-300 hover:bg-purple-800"></button>
@@ -98,7 +100,7 @@ const Details = () => {
               <button className="w-8 h-8 rounded-[50%] bg-[#e8e8e8] transition-colors duration-300 hover:bg-gray-400"></button>
             </div>
 
-            <div className=" flex gap-3">
+            <div className=" flex gap-3 items-center justify-center md:justify-start">
               <button
                 className={`w-[70px] py-2 rounded-md border border-solid ${
                   selectedButtonIndex === 0
@@ -142,11 +144,11 @@ const Details = () => {
             </div>
 
             {/* over here */}
-            <div className="grid grid-col-2 md:grid-cols-3  ">
+            <div className="flex flex-wrap gap-3 items-center justify-center md:justify-start">
               <Features
                 icon={<FaMobileScreenButton />}
                 text1={"Screen Size"}
-                text2={"Apple A16 Bionic"}
+                text2={'6.7"'}
               />
               <Features
                 icon={<FiCpu />}
@@ -177,29 +179,39 @@ const Details = () => {
                 text2={"4323MaH"}
               />
             </div>
-
-            <p className="text-[12px] text-[#6c6c6c]">
-              Enhanced capabilities thanks to an enlarged display of 6.7 inches
-              and work without recharging throughout the day. Incredible photos
-              in weak yes and in bright light using the new system with two
-              cameras more...
-            </p>
-
+            <div className="w-[100%]">
+              <p className="text-[12px] text-[#6c6c6c] md:w-[100%] w-[60%] mx-auto">
+                Enhanced capabilities thanks to an enlarged display of 6.7
+                inches and work without recharging throughout the day.
+                Incredible photos in weak yes and in bright light using the new
+                system with two cameras more...
+              </p>
+            </div>
             <div className="flex justify-between flex-col md:flex-row items-center space-y-5 md:space-y-0">
-              <button className="bg-white md:w-[48%] w-[90%] h-[45px] rounded-[4px] border border-black text-[13px]">
+              <button className="bg-white md:w-[48%] w-[60%] h-[45px] rounded-[4px] border border-black text-[13px]">
                 Add To WishList
               </button>
-              <button className="bg-black text-white md:w-[48%] w-[90%] h-[45px] rounded-[4px] text-[13px]">
+              <button className="bg-black text-white md:w-[48%] w-[60%] h-[45px] rounded-[4px] text-[13px]">
                 Add To Card
               </button>
             </div>
 
             <div className="flex justify-between">
-              
-              <Assurance icon={<PiTruck />} text1={"Free delivery"} text2={"1-2 Days"}/>
-              <Assurance icon={<BsHouseCheck />} text1={"In Stock"} text2={"Today"}/>
-              <Assurance icon={<ImCheckmark />} text1={"Guaranteed"} text2={"1 year"}/>
-
+              <Assurance
+                icon={<PiTruck />}
+                text1={"Free delivery"}
+                text2={"1-2 Days"}
+              />
+              <Assurance
+                icon={<BsHouseCheck />}
+                text1={"In Stock"}
+                text2={"Today"}
+              />
+              <Assurance
+                icon={<ImCheckmark />}
+                text1={"Guaranteed"}
+                text2={"1 year"}
+              />
             </div>
           </div>
         </div>
