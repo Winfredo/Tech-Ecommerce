@@ -58,6 +58,18 @@ const Details = () => {
     );
   };
 
+  const ProgressBar = ({text1,bar,number}) =>{
+    return(
+      <div className="flex  items-center gap-5">
+        <p>{text1}</p>
+        <div className="w-[50%] h-[6px] rounded-xl bg-[#d9d9d9]">
+        <div className="w-[60%] h-full rounded-xl bg-[#ffb547]"></div></div>
+        <p>{number}</p>
+      </div>
+    )
+
+  }
+
   const [selectedButtonIndex, setSelectedButtonIndex] = useState(null);
 
   const handleClick = (index) => {
@@ -275,6 +287,33 @@ const Details = () => {
             </button>
           </div>
         </div>
+        {/* Reviews part */}
+        <div className="w-full h-[500px] bg-red-200 mt-[60px]">
+          <div className="max-w-[1250px] h-full mx-auto pt-10 px-10 bg-green-200">
+            <p className="py-5">Reviews</p>
+
+            {/*Div for the reviews card and progress bar  */}
+            <div className="   md:flex-none md:justify-normal ">
+              <div className="h-[90px] md:w-[8%] w-[100%]  bg-[#fafafa] text-center rounded-lg flex flex-col justify-center items-center">
+                <div className="flex md:flex-col w-[70%] justify-around items-center md:justify-normal ">
+                  <div>
+                    <p className="text-[30px]">4.8</p>
+                    <p className="text-[8px] pb-1">of 125 reviews</p>
+                  </div>
+
+                  <img src="./images/stars.svg" alt="stars" className="w-[70px]" />
+                </div>
+              </div>
+
+              {/* progress bar starts here */}
+              <div className="">
+                <ProgressBar text1={"Excellent"} number={100} bar={"1/2"} />
+              </div>
+            </div>
+            {/* progress bar ends here */}
+          </div>
+        </div>
+        s
       </div>
     </div>
   );
