@@ -46,7 +46,6 @@ const Details = () => {
     return (
       <div className="flex justify-between pb-1 mb-5 border-b border-opacity-40 border-[#cdcdcd]">
         <p className="text-[13px]">{text1}</p>
-
         <div className="text-right">
           <p className="text-[13px]">{text2} </p>
           <p className="text-[13px]">{text3} </p>
@@ -58,17 +57,17 @@ const Details = () => {
     );
   };
 
-  const ProgressBar = ({text1,bar,number}) =>{
-    return(
-      <div className="flex  items-center gap-5">
-        <p>{text1}</p>
-        <div className="w-[50%] h-[6px] rounded-xl bg-[#d9d9d9]">
-        <div className="w-[60%] h-full rounded-xl bg-[#ffb547]"></div></div>
-        <p>{number}</p>
+  const ProgressBar = ({ text1, bar, number }) => {
+    return (
+      <div className="flex items-center gap-3 space-y-3">
+        <p className="md:w-[13%] w-[40%] text-sm mt-3">{text1}</p>
+        <div className="w-[100%] md:w-[80%] h-[6px] rounded-xl bg-[#d9d9d9]">
+          <div className="w-[50%] h-full rounded-xl bg-[#ffb547]"></div>
+        </div>
+        <p className="text-[#999] w-[10%]">{number}</p>
       </div>
-    )
-
-  }
+    );
+  };
 
   const [selectedButtonIndex, setSelectedButtonIndex] = useState(null);
 
@@ -288,32 +287,37 @@ const Details = () => {
           </div>
         </div>
         {/* Reviews part */}
-        <div className="w-full h-[500px] bg-red-200 mt-[60px]">
-          <div className="max-w-[1250px] h-full mx-auto pt-10 px-10 bg-green-200">
+        <div className="w-full h-[500px] bg-white mt-[50px]">
+          <div className="max-w-[1250px] h-full mx-auto pt-10 px-10 ">
             <p className="py-5">Reviews</p>
 
             {/*Div for the reviews card and progress bar  */}
-            <div className="   md:flex-none md:justify-normal ">
-              <div className="h-[90px] md:w-[8%] w-[100%]  bg-[#fafafa] text-center rounded-lg flex flex-col justify-center items-center">
-                <div className="flex md:flex-col w-[70%] justify-around items-center md:justify-normal ">
+            <div className="flex justify-between items-center flex-col md:flex-row">
+              <div className="md:h-[150px] h-[100px]  md:w-[12%] w-[100%]  bg-[#fafafa] text-center rounded-xl flex flex-col justify-center items-center">
+                <div className="flex md:flex-col w-[70%]  justify-around items-center md:justify-normal ">
                   <div>
                     <p className="text-[30px]">4.8</p>
                     <p className="text-[8px] pb-1">of 125 reviews</p>
                   </div>
-
-                  <img src="./images/stars.svg" alt="stars" className="w-[70px]" />
+                  <img
+                    src="./images/stars.svg"
+                    alt="stars"
+                    className="w-[70px]"
+                  />
                 </div>
               </div>
-
               {/* progress bar starts here */}
-              <div className="">
-                <ProgressBar text1={"Excellent"} number={100} bar={"1/2"} />
+              <div className=" mt-5 md:mt-0 md:w-[75%] w-[100%] ">
+                <ProgressBar text1={"Excellent"} number={100} />
+                <ProgressBar text1={"Good"} number={80} />
+                <ProgressBar text1={"Average"} number={60} />
+                <ProgressBar text1={"Below Average"} number={40} />
+                <ProgressBar text1={"Poor"} number={20} />
               </div>
             </div>
-            {/* progress bar ends here */}
           </div>
+          {/* progress bar ends here */}
         </div>
-        s
       </div>
     </div>
   );
