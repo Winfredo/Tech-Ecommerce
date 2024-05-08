@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const SubFooter = () => {
   return (
@@ -19,20 +19,19 @@ const SubFooter = () => {
             <p className="text-[16px] text-[#787878]">
               Commodo fames vitae vitae leo mauris in. Eu consequat
             </p>
-            <Link to={"/products"}><button className="w-[120px] h-[45px] text-sm text-white border-[1px] mt-7 rounded-md">
-              Shop Now
-            </button></Link>
+            <Link to={"/products"}>
+              <button className="w-[120px] h-[45px] text-sm text-white border-[1px] mt-7 rounded-md">
+                Shop Now
+              </button>
+            </Link>
           </div>
         </div>
-
         <img
           src="./images/Group2.png"
           alt="iphone"
           className="hidden lg:flex lg:w-[300px]  lg:h-[500px]"
         />
       </div>
-
-      {/* top right corner */}
       <div>
         <img
           src="./images/Group3.png"
@@ -40,7 +39,6 @@ const SubFooter = () => {
           className="lg:hidden absolute top-0 right-0 w-[300px] h-[150px]"
         />
       </div>
-      {/* top right corner ends here */}
       <div>
         <img
           src="./images/bottomright.png"
@@ -48,8 +46,6 @@ const SubFooter = () => {
           className="lg:hidden absolute bottom-0 right-0 w-[120px] h-[150px]"
         />
       </div>
-
-      {/* Div for bottom left and top left */}
       <div>
         <img
           src="./images/bottomleft.png"
@@ -57,8 +53,6 @@ const SubFooter = () => {
           className="lg:hidden absolute bottom-0 left-0 w-[120px] h-[150px]"
         />
       </div>
-
-      {/* top left pic */}
       <div>
         <img
           src="./images/topleft.png"
@@ -66,7 +60,6 @@ const SubFooter = () => {
           className="lg:hidden absolute top-0 left-0 w-[100px] h-[100px] "
         />
       </div>
-      {/* top left pic ends here */}
     </div>
   );
 };
