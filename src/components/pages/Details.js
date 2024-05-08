@@ -84,7 +84,7 @@ const Details = () => {
   const IndividualReviews = ({ pic, name, rating, text, review1, review2 }) => {
     return (
       <div className="w-full  mt-7 bg-[#fafafa] flex py-8 rounded-lg ">
-        <img src={pic} alt="" className="h-[45px] w-[45px] ml-2" />
+        <img src={pic} alt="" className="h-[45px] w-[45px] ml-2 " />
 
         <div className="pr-5 pl-3">
           <div className="flex justify-between">
@@ -116,7 +116,7 @@ const Details = () => {
       <Header />
       <SubHeader />
 
-      <div className="w-full bg-white">
+      <div className="w-full pt-10 md:pt-0 bg-white">
         <div className="max-w-[1250px] pb-7 h-full mx-auto ">
           <div className="hidden mx-5 lg:flex flex-1 pt-7 text-[#a4a4a4] text-sm font-light">
             <Link to={"/"}>
