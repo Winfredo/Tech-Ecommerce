@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <div className="sticky  z-[999] h-[88px] bg-white">
+    <div className="md:sticky w-full fixed z-[999] h-[88px] bg-white">
       <div className=" h-full flex lg:max-w-[1250px] mx-auto">
         <div className=" flex flex-1 items-center justify-between">
           <Link to={"/"}>
@@ -84,7 +84,7 @@ const Header = () => {
 
         {/* the hamburger menu tab */}
         <div
-          className={`lg:hidden fixed top-[88px] left-0 w-full h-screen  bg-gradient-to-r from-[#211C24] to-[#27212b] pt-11 transition-transform duration-500 ${
+          className={`lg:hidden fixed top-[88px]  left-0 w-full h-screen  bg-gradient-to-r from-[#211C24] to-[#27212b] pt-11 transition-transform duration-500 ${
             mobileMenuOpen ? "transform translate-x-0" : "transform -translate-x-full"
           }`}
         >

@@ -255,7 +255,7 @@ const Details = () => {
                 className="bg-black text-white md:w-[48%] w-[90%] h-[45px] rounded-[4px] text-[13px]"
                 onClick={() => setOpen(true)}
               >
-                Add To Card
+                Add To Cart
               </button>
 
               <Modal
