@@ -112,7 +112,7 @@ const Gadgets = () => {
               
               
             </p>
-            <Link to={"/products"}><button className="lg:w-[130px] lg:h-[40px] w-[270px] h-[45px] mt-6  text-[12px] text-black border-[1px] border-black lg:mt-3 rounded-md">
+            <Link to={"/products"}><button className="lg:w-[130px] lg:h-[40px] w-[270px] h-[45px] mt-6  text-[12px] hover:bg-[#27212b]  hover:text-white transition-colors duration-300 text-black border-[1px] border-black lg:mt-3 rounded-md">
               Shop Now
             </button></Link>
           </div>
