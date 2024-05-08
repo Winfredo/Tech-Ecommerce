@@ -8,8 +8,8 @@ export const router = createBrowserRouter([
     path: "/",
     element: <App />,
     errorElement: (
-      <button className="w-[280px] h-[100px] flex  justify-center items-center m-auto mt-[25rem]">
-        404 Not Found
+      <button className="w-[280px] h-[100px] text-xl flex justify-center items-center m-auto mt-[25rem] animate-bounce">
+        404 Page Not Found
       </button>
     ),
   },
