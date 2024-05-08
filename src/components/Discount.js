@@ -54,7 +54,7 @@ const Discount = () => {
   };
 
   return (
-    <div className="w-full mt-10 ">
+    <div className="w-full mt-10">
       <div className="lg:max-w-[1250px] h-full mx-auto">
         <p className="font-light ml-3 flex justify-start">Discounts up to -50%</p>
 

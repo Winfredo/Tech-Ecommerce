@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Header";
 import SubHeader from "../SubHeader";
+import Discount from "../Discount.js"
 import { Link } from "react-router-dom";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import { useState } from "react";
@@ -57,14 +58,27 @@ const Details = () => {
     );
   };
 
-  const ProgressBar = ({ text1, bar, number }) => {
+  const IndividualReviews = ({ pic, name, rating, text, review1, review2 }) => {
     return (
-      <div className="flex items-center gap-3 space-y-3">
-        <p className="md:w-[13%] w-[40%] text-sm mt-3">{text1}</p>
-        <div className="w-[100%] md:w-[80%] h-[6px] rounded-xl bg-[#d9d9d9]">
-          <div className="w-[50%] h-full rounded-xl bg-[#ffb547]"></div>
+      <div className="w-full  mt-7 bg-[#fafafa] flex py-8 rounded-lg ">
+        <img src={pic} alt="" className="h-[45px] w-[45px] ml-2" />
+
+        <div className="pr-5 pl-3">
+          <div className="flex justify-between">
+            <div>
+              <p className="text-[14px] font-semibold">{name}</p>
+              <img src={rating} className="w-[80px]" />
+            </div>
+            <p className="mt-2 text-[14px] text-[#c8c8c8]">24 January, 2023</p>
+          </div>
+          <p className="text-[#7e7e7e] mt-2 text-[13px]">{text}</p>
+
+          <div className="flex gap-2 pt-2">
+            <img src={review1} />
+            <img src={review2} />
+
+          </div>
         </div>
-        <p className="text-[#999] w-[10%]">{number}</p>
       </div>
     );
   };
@@ -287,7 +301,7 @@ const Details = () => {
           </div>
         </div>
         {/* Reviews part */}
-        <div className="w-full h-[500px] bg-white mt-[50px]">
+        <div className="w-full mb-10 bg-white mt-[50px]">
           <div className="max-w-[1250px] h-full mx-auto pt-10 px-10 ">
             <p className="py-5">Reviews</p>
 
@@ -306,18 +320,100 @@ const Details = () => {
                   />
                 </div>
               </div>
-              {/* progress bar starts here */}
-              <div className=" mt-5 md:mt-0 md:w-[75%] w-[100%] ">
-                <ProgressBar text1={"Excellent"} number={100} />
-                <ProgressBar text1={"Good"} number={80} />
-                <ProgressBar text1={"Average"} number={60} />
-                <ProgressBar text1={"Below Average"} number={40} />
-                <ProgressBar text1={"Poor"} number={20} />
+
+              <div className=" mt-5 md:mt-0 md:w-[75%] w-[100%]">
+                <div className="flex items-center gap-3 space-y-3">
+                  <p className="md:w-[13%] w-[40%] text-sm mt-3">Poor</p>
+                  <div className="w-[100%] md:w-[80%] h-[6px] rounded-xl bg-[#d9d9d9]">
+                    <div className="w-[30%] h-full rounded-xl bg-[#ffb547]"></div>
+                  </div>
+                  <p className="text-[#999] w-[4%] text-right">2</p>
+                </div>
+
+                <div className="flex items-center gap-3 space-y-3">
+                  <p className="md:w-[13%] w-[40%] text-sm mt-3">Good</p>
+                  <div className="w-[100%] md:w-[80%] h-[6px] rounded-xl bg-[#d9d9d9]">
+                    <div className="w-[70%] h-full rounded-xl bg-[#ffb547]"></div>
+                  </div>
+                  <p className="text-[#999] w-[4%] text-right">8</p>
+                </div>
+
+                <div className="flex items-center gap-3 space-y-3">
+                  <p className="md:w-[13%] w-[40%] text-sm mt-3">Average</p>
+                  <div className="w-[100%] md:w-[80%] h-[6px] rounded-xl bg-[#d9d9d9]">
+                    <div className="w-[60%] h-full rounded-xl bg-[#ffb547]"></div>
+                  </div>
+                  <p className="text-[#999] w-[4%] text-right">5</p>
+                </div>
+
+                <div className="flex items-center gap-3 space-y-3">
+                  <p className="md:w-[13%] w-[40%] text-sm mt-3">
+                    Below Average
+                  </p>
+                  <div className="w-[100%] md:w-[80%] h-[6px] rounded-xl bg-[#d9d9d9]">
+                    <div className="w-[40%] h-full rounded-xl bg-[#ffb547]"></div>
+                  </div>
+                  <p className="text-[#999] w-[4%] text-right">3</p>
+                </div>
+
+                <div className="flex items-center gap-3 space-y-3">
+                  <p className="md:w-[13%] w-[40%] text-sm mt-3">Excellent</p>
+                  <div className="w-[100%] md:w-[80%] h-[6px] rounded-xl bg-[#d9d9d9]">
+                    <div className="w-[90%] h-full rounded-xl bg-[#ffb547]"></div>
+                  </div>
+                  <p className="text-[#999] w-[4%] text-right">10</p>
+                </div>
               </div>
             </div>
-          </div>
-          {/* progress bar ends here */}
+
+            {/* leave a comment */}
+            <div className="">
+              <input
+                type="text"
+                placeholder="Leave Comment"
+                className="w-[100%] h-[40px] mt-10 rounded-md  outline-0 border 
+                border-[#cecece] border-opacity-50 pl-2 mr-4 bg-[#fff]"
+              />
+            </div>
+            {/* individual reviews */}
+            <div>
+              <IndividualReviews
+                pic="./images/userpic1.svg"
+                name={"Grace Carey"}
+                rating="./images/4stars.svg"
+                text={
+                  " I was a bit nervous to be buying a secondhand iphone from Amazon, but i couldnt be much happier with my purchase. I have a prepaid data plan so i was worried that this phone wouldnt connect with my data plan,since the new phones dont have physical sim tray anymore, but couldnt have been easier. I bought an unlocked iphone 14 pro max in excellent health and everything is perfect. Highly recommend!"
+                }
+              />
+
+              <IndividualReviews
+                pic="./images/userpic2.svg"
+                name={"Winfred Nukpezah"}
+                rating="./images/4stars.svg"
+                text={
+                  " This phone has 1TB storage and its durable. Plus all the new iPhones have a C port! Apple is phasing out the current ones!(All about the Benjamins) So if you want a phone plug thats going to last grab and iphone 14 pro and get several cords and plugs."
+                }
+              />
+
+              <IndividualReviews
+                pic="./images/userpic3.svg"
+                name={"Eunice Kafui"}
+                rating="./images/4stars.svg"
+                text={
+                  "I might be the only one to say this but this iphone is a little bit funky. Hoping it will change with a software update: otherwise love this phone! Came in great condition. I will recommend this to my friends and family."
+                }
+                review1="./images/iphonereview1.svg"
+                review2="./images/iphonereview2.svg"
+              />
+              <div className="flex justify-center mt-8"> 
+              <button className="h-[40px] w-[140px] pl-3 rounded-md  border-black border bg-white text-[13px] flex items-center justify-center">
+              View More <MdOutlineArrowDropDown className="text-[25px]" />
+            </button>
+              </div>
+            </div>
+          </div>        
         </div>
+        <Discount />
       </div>
     </div>
   );
