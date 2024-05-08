@@ -16,8 +16,30 @@ import { PiTruck } from "react-icons/pi";
 import { BsHouseCheck } from "react-icons/bs";
 import { ImCheckmark } from "react-icons/im";
 import { MdOutlineArrowDropDown } from "react-icons/md";
+import { Modal, notification } from "antd";
 
 const Details = () => {
+  const [open, setOpen] = useState(false);
+
+  const HandleSend = () => {
+    notification.open({
+      message: "Added to cart successfully",
+      type: "success",
+      style: {
+        width: 500,
+        height: 60,
+        backgroundColor: "#CBFFCA",
+        border: "1px solid #5DC45B",
+        borderRadius: "4px",
+        display: "flex",
+        alignItems: "center",
+        paddingTop: 30,
+      },
+      placement: "top",
+    });
+    setOpen(false);
+  };
+
   const Features = ({ icon, text1, text2 }) => {
     return (
       <div className="h-[60px] w-[45%] lg:w-[170px] rounded-md bg-[#f4f4f4] flex items-center pl-5 mb-3">
@@ -68,15 +90,15 @@ const Details = () => {
           <div className="flex justify-between">
             <div>
               <p className="text-[14px] font-semibold">{name}</p>
-              <img src={rating} className="w-[80px]" />
+              <img src={rating} alt="" className="w-[80px]" />
             </div>
             <p className="mt-2 text-[14px] text-[#c8c8c8]">24 January, 2023</p>
           </div>
           <p className="text-[#7e7e7e] mt-2 text-[13px]">{text}</p>
 
           <div className="flex gap-2 pt-2">
-            <img src={review1} />
-            <img src={review2} />
+            <img src={review1} alt="" />
+            <img src={review2} alt="" />
           </div>
         </div>
       </div>
@@ -229,9 +251,45 @@ const Details = () => {
               <button className="bg-white md:w-[48%] w-[90%] h-[45px] rounded-[4px] border border-black text-[13px]">
                 Add To WishList
               </button>
-              <button className="bg-black text-white md:w-[48%] w-[90%] h-[45px] rounded-[4px] text-[13px]">
+              <button
+                className="bg-black text-white md:w-[48%] w-[90%] h-[45px] rounded-[4px] text-[13px]"
+                onClick={() => setOpen(true)}
+              >
                 Add To Card
               </button>
+
+              <Modal
+                centered
+                visible={open}
+                onOk={HandleSend}
+                onCancel={() => setOpen(false)}
+                width={300}
+                okText="Yes"
+                okButtonProps={{
+                  style: {
+                    backgroundColor: "#2c2c2c",
+                    width: "120px",
+                    height: "30px",
+                    fontSize: "13px",
+                    borderRadius: "3px",
+                    fontWeight: "200",
+                  },
+                }}
+                cancelButtonProps={{
+                  style: {
+                    border: "none",
+                    marginRight: "30px",
+                    fontSize: "13px",
+                    boxShadow: "none",
+                    color: "black",
+                  },
+                }}
+                closable={false}
+              >
+                <div className="py-5">
+                  <p>Are you sure you want to add to cart?</p>
+                </div>
+              </Modal>
             </div>
 
             <div className="flex justify-between">
