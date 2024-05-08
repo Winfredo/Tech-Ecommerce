@@ -64,7 +64,6 @@ const Products = () => {
     <div>
       <Header />
       <SubHeader />
-
       <div className="w-full bg-white">
         <div className="max-w-[1250px] pb-7 h-full mx-auto">
           <div className="hidden mx-5 lg:flex flex-1 pt-7 text-[#a4a4a4] text-sm font-light">
@@ -78,8 +77,6 @@ const Products = () => {
             </p>
             <p className="text-[#a4a4a4] font-light">Smartphones</p>
           </div>
-
-          {/* for the small screen view */}
           <div className="md:hidden flex justify-center">
             <button
               className="h-[50px] w-[170px] rounded-lg mr-5 border"
@@ -108,11 +105,8 @@ const Products = () => {
               />
             </Space>
           </div>
-
-          
         </div>
       </div>
-
       <div className="w-full bg-white">
         <div className="lg:max-w-[1250px] h-full flex justify-center items-center p-5 mx-auto">
           {/* time to flex the shid */}
@@ -127,7 +121,6 @@ const Products = () => {
               >
                 <SubMenu key="sub1" title="Price">
                   <Menu.Divider />
-
                   <div className="flex justify-between py-3 items-center text-[11px] text-[#b5b5b5]">
                     <p>From</p>
                     <p>To</p>
@@ -165,7 +158,6 @@ const Products = () => {
                   />
                 </SubMenu>
                 <Menu.Divider />
-
                 <SubMenu key="sub2" title="Brand">
                   <Menu.Divider />
 
@@ -360,7 +352,6 @@ const Products = () => {
                 </SubMenu>
               </Menu>
             </div>
-            {/* second div will start here */}
             <div className="w-full  md:ml-[40px] ">
               <div className="flex justify-between">
                 <p>
@@ -395,7 +386,6 @@ const Products = () => {
               </div>
             </div>
           </div>
-          {/* the shid ends here */}
         </div>
         <Footer />
       </div>

@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "../Header";
 import SubHeader from "../SubHeader";
-import Discount from "../Discount.js"
+import RelatedPages from "../RelatedPages.js";
+import Footer from "../Footer.js";
 import { Link } from "react-router-dom";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import { useState } from "react";
@@ -76,7 +77,6 @@ const Details = () => {
           <div className="flex gap-2 pt-2">
             <img src={review1} />
             <img src={review2} />
-
           </div>
         </div>
       </div>
@@ -182,8 +182,6 @@ const Details = () => {
                 1TB
               </button>
             </div>
-
-            {/* over here */}
             <div className="flex flex-wrap gap-3 items-center justify-center md:justify-start">
               <Features
                 icon={<FaMobileScreenButton />}
@@ -300,12 +298,10 @@ const Details = () => {
             </button>
           </div>
         </div>
-        {/* Reviews part */}
-        <div className="w-full mb-10 bg-white mt-[50px]">
+        <div className="w-full  bg-white mt-[50px]">
           <div className="max-w-[1250px] h-full mx-auto pt-10 px-10 ">
             <p className="py-5">Reviews</p>
 
-            {/*Div for the reviews card and progress bar  */}
             <div className="flex justify-between items-center flex-col md:flex-row">
               <div className="md:h-[150px] h-[100px]  md:w-[12%] w-[100%]  bg-[#fafafa] text-center rounded-xl flex flex-col justify-center items-center">
                 <div className="flex md:flex-col w-[70%]  justify-around items-center md:justify-normal ">
@@ -320,7 +316,6 @@ const Details = () => {
                   />
                 </div>
               </div>
-
               <div className=" mt-5 md:mt-0 md:w-[75%] w-[100%]">
                 <div className="flex items-center gap-3 space-y-3">
                   <p className="md:w-[13%] w-[40%] text-sm mt-3">Poor</p>
@@ -329,7 +324,6 @@ const Details = () => {
                   </div>
                   <p className="text-[#999] w-[4%] text-right">2</p>
                 </div>
-
                 <div className="flex items-center gap-3 space-y-3">
                   <p className="md:w-[13%] w-[40%] text-sm mt-3">Good</p>
                   <div className="w-[100%] md:w-[80%] h-[6px] rounded-xl bg-[#d9d9d9]">
@@ -337,7 +331,6 @@ const Details = () => {
                   </div>
                   <p className="text-[#999] w-[4%] text-right">8</p>
                 </div>
-
                 <div className="flex items-center gap-3 space-y-3">
                   <p className="md:w-[13%] w-[40%] text-sm mt-3">Average</p>
                   <div className="w-[100%] md:w-[80%] h-[6px] rounded-xl bg-[#d9d9d9]">
@@ -345,7 +338,6 @@ const Details = () => {
                   </div>
                   <p className="text-[#999] w-[4%] text-right">5</p>
                 </div>
-
                 <div className="flex items-center gap-3 space-y-3">
                   <p className="md:w-[13%] w-[40%] text-sm mt-3">
                     Below Average
@@ -355,7 +347,6 @@ const Details = () => {
                   </div>
                   <p className="text-[#999] w-[4%] text-right">3</p>
                 </div>
-
                 <div className="flex items-center gap-3 space-y-3">
                   <p className="md:w-[13%] w-[40%] text-sm mt-3">Excellent</p>
                   <div className="w-[100%] md:w-[80%] h-[6px] rounded-xl bg-[#d9d9d9]">
@@ -365,8 +356,6 @@ const Details = () => {
                 </div>
               </div>
             </div>
-
-            {/* leave a comment */}
             <div className="">
               <input
                 type="text"
@@ -375,7 +364,6 @@ const Details = () => {
                 border-[#cecece] border-opacity-50 pl-2 mr-4 bg-[#fff]"
               />
             </div>
-            {/* individual reviews */}
             <div>
               <IndividualReviews
                 pic="./images/userpic1.svg"
@@ -385,16 +373,14 @@ const Details = () => {
                   " I was a bit nervous to be buying a secondhand iphone from Amazon, but i couldnt be much happier with my purchase. I have a prepaid data plan so i was worried that this phone wouldnt connect with my data plan,since the new phones dont have physical sim tray anymore, but couldnt have been easier. I bought an unlocked iphone 14 pro max in excellent health and everything is perfect. Highly recommend!"
                 }
               />
-
               <IndividualReviews
                 pic="./images/userpic2.svg"
-                name={"Winfred Nukpezah"}
+                name={"Winfred Nuks"}
                 rating="./images/4stars.svg"
                 text={
                   " This phone has 1TB storage and its durable. Plus all the new iPhones have a C port! Apple is phasing out the current ones!(All about the Benjamins) So if you want a phone plug thats going to last grab and iphone 14 pro and get several cords and plugs."
                 }
               />
-
               <IndividualReviews
                 pic="./images/userpic3.svg"
                 name={"Eunice Kafui"}
@@ -405,16 +391,17 @@ const Details = () => {
                 review1="./images/iphonereview1.svg"
                 review2="./images/iphonereview2.svg"
               />
-              <div className="flex justify-center mt-8"> 
-              <button className="h-[40px] w-[140px] pl-3 rounded-md  border-black border bg-white text-[13px] flex items-center justify-center">
-              View More <MdOutlineArrowDropDown className="text-[25px]" />
-            </button>
+              <div className="flex justify-center mt-8">
+                <button className="h-[40px] w-[140px] pl-3 rounded-md  border-black border bg-white text-[13px] flex items-center justify-center">
+                  View More <MdOutlineArrowDropDown className="text-[25px]" />
+                </button>
               </div>
             </div>
-          </div>        
+          </div>
         </div>
-        <Discount />
+        <RelatedPages />
       </div>
+      <Footer />
     </div>
   );
 };
