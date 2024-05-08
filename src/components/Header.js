@@ -68,7 +68,7 @@ const Header = () => {
             <div className="mr-3">
               {mobileMenuOpen ? (
                 <MdClose
-                  className="text-[25px] text-white cursor-pointer"
+                  className="text-[25px] text-black cursor-pointer"
                   onClick={handleMobileMenuToggle}
                 />
               ) : (
@@ -82,13 +82,13 @@ const Header = () => {
         </div>
        
 
-{/* the hamburger menu tab */}
+        {/* the hamburger menu tab */}
         <div
           className={`lg:hidden fixed top-[88px] left-0 w-full h-screen  bg-gradient-to-r from-[#211C24] to-[#27212b] pt-11 transition-transform duration-500 ${
             mobileMenuOpen ? "transform translate-x-0" : "transform -translate-x-full"
           }`}
         >
-          <ul className=" pt-[3rem]  flex flex-col items-center">
+          <ul className="  flex flex-col items-center">
             <li
               className="text-md text-[#fff] py-7 hover:bg-white hover:w-full hover:text-center hover:text-[#000]  cursor-pointer"
               onClick={closeMobileMenu}
@@ -114,12 +114,6 @@ const Header = () => {
               Blog
             </li>
           </ul>
-          <div className="absolute top-0 right-0 m-3 ">
-                <MdClose
-                  className="text-[25px] text-white cursor-pointer"
-                  onClick={handleMobileMenuToggle}
-                />
-              </div>
         </div>
       </div>
     </div>
