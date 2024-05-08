@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "../Header";
 import SubHeader from "../SubHeader";
-import Discount from "../Discount.js"
+import RelatedPages from "../RelatedPages.js";
+import Footer from "../Footer.js";
 import { Link } from "react-router-dom";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import { useState } from "react";
@@ -301,7 +302,7 @@ const Details = () => {
           </div>
         </div>
         {/* Reviews part */}
-        <div className="w-full mb-10 bg-white mt-[50px]">
+        <div className="w-full  bg-white mt-[50px]">
           <div className="max-w-[1250px] h-full mx-auto pt-10 px-10 ">
             <p className="py-5">Reviews</p>
 
@@ -388,7 +389,7 @@ const Details = () => {
 
               <IndividualReviews
                 pic="./images/userpic2.svg"
-                name={"Winfred Nukpezah"}
+                name={"Winfred Nuks"}
                 rating="./images/4stars.svg"
                 text={
                   " This phone has 1TB storage and its durable. Plus all the new iPhones have a C port! Apple is phasing out the current ones!(All about the Benjamins) So if you want a phone plug thats going to last grab and iphone 14 pro and get several cords and plugs."
@@ -413,8 +414,9 @@ const Details = () => {
             </div>
           </div>        
         </div>
-        <Discount />
+        <RelatedPages />
       </div>
+      <Footer />
     </div>
   );
 };
