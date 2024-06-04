@@ -105,10 +105,10 @@ font-size: 13px !important;
   margin-right: 30px;
 }
 
-.userbtn{
+.userbtn {
   background-color: #f3f1ff;
   height: 40px;
-  width: 350px;
+  width: 40%;
   padding-left: 23px;
   margin: 5px;
   border-radius: 6px;
@@ -118,13 +118,18 @@ font-size: 13px !important;
   background-repeat: no-repeat;
   background-position: 5px center;
   background-size: 15px;
-  margin-right: 30px;
+}
+
+@media (max-width: 767px) {
+  .userbtn {
+    width: 70%;
+  }
 }
 
 .passwordbtn{
   background-color: #f3f1ff;
   height: 40px;
-  width: 350px;
+  width: 40%;
   padding-left: 23px;
   margin: 10px 5px;
   border-radius: 6px;
@@ -134,5 +139,10 @@ font-size: 13px !important;
   background-repeat: no-repeat;
   background-position: 5px center;
   background-size: 15px;
-  margin-right: 30px;
+}
+
+@media (max-width: 767px) {
+  .passwordbtn {
+    width: 70%;
+  }
 }
