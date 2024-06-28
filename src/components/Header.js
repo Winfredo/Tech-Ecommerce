@@ -8,6 +8,7 @@ import { MdClose } from "react-icons/md";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleMobileMenuToggle = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -15,6 +16,10 @@ const Header = () => {
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
+  };
+
+  const handleLogin = () => {
+    setIsLoggedIn(true);
   };
 
   return (
@@ -56,16 +61,26 @@ const Header = () => {
               >
                 Blog
               </li>
+
+              {isLoggedIn ? (
+                <div className="flex items-center justify-end space-x-7 mr-5 text-[16px]">
+                  <AiOutlineHeart className="text-[25px]" />
+                  <AiOutlineShoppingCart className="text-[25px]" />
+                  <Link>
+                    <RxPerson className="text-[25px] " />
+                  </Link>
+                </div>
+              ) : (
+                <Link to={"/login"}>
+                  <button
+                    className="py-[5px] px-7 bg-[#2c2c2c] rounded-md text-white"
+                    onClick={handleLogin}
+                  >
+                    LOGIN
+                  </button>
+                </Link>
+              )}
             </ul>
-            {/* <div className="flex h-full ml-[1rem]  items-center justify-end space-x-7 mr-5 text-[16px]">
-              <AiOutlineHeart className="text-[25px]" />
-              <AiOutlineShoppingCart className="text-[25px]" />
-              <Link ><RxPerson className="text-[25px] " /></Link>
-            </div> */}
-            <Link to={"/login"}>
-            <button className="py-[5px] px-7 bg-[#2c2c2c] rounded-md text-white">
-              LOGIN
-            </button></Link>
           </div>
 
           <div className="lg:hidden flex items-center">
@@ -84,12 +99,13 @@ const Header = () => {
             </div>
           </div>
         </div>
-       
 
         {/* the hamburger menu tab */}
         <div
           className={`lg:hidden fixed top-[88px]  left-0 w-full h-screen  bg-gradient-to-r from-[#211C24] to-[#27212b] pt-11 transition-transform duration-500 ${
-            mobileMenuOpen ? "transform translate-x-0" : "transform -translate-x-full"
+            mobileMenuOpen
+              ? "transform translate-x-0"
+              : "transform -translate-x-full"
           }`}
         >
           <ul className="  flex flex-col items-center">
@@ -125,6 +141,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-
