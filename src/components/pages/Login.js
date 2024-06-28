@@ -40,14 +40,24 @@ const Login = () => {
         alert(errorCode);
       });
   };
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showInputFields, setShowInputFields] = useState(false);
-  const handleSignInClick = () => {
-    setShowInputFields(true);
-  };
+  const [signInText, setSignInText] = useState("Sign In")
+  const [ReadText, setReadText] = useState(" Have An Account?")
 
+  const handleSignInClick = () => {
+    if (showInputFields) {
+      setShowInputFields(false);
+      setSignInText("Sign In")
+      setReadText(" Have An Account?")
+    } else {
+      setShowInputFields(true);
+      setSignInText("Sign Up")
+      setReadText("Create An Account?")
+
+    }
+  };
   return (
     <div className="w-full h-[100vh] flex ">
       <div className="h-[100%] bg-[#c7c4cc] flex flex-col justify-center items-center w-full sm:w-[50%]">
@@ -107,9 +117,9 @@ const Login = () => {
           </div>
         )}
         <p className="mt-4 ">
-          Have an Account?
+          {ReadText}
           <button className="pl-2 text-blue-500" onClick={handleSignInClick}>
-            Sign In
+          {signInText}
           </button>
         </p>
       </div>
