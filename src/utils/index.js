@@ -8,9 +8,9 @@ export const router = createBrowserRouter([
     path: "/",
     element: <App />,
     errorElement: (
-      <button className="w-[280px] h-[100px] text-xl flex justify-center items-center m-auto mt-[25rem] animate-bounce">
+      <div className="h-[100vh] w-screen flex items-center justify-center text-[35px] text-white bg-gradient-to-r from-[#211C24] to-[#27212b] ">
         404 Page Not Found
-      </button>
+      </div>
     ),
   },
   {
@@ -23,6 +23,6 @@ export const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <Loginpage />
-  }
+    element: <Loginpage />,
+  },
 ]);
