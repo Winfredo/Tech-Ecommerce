@@ -9,7 +9,7 @@ import {
 } from "firebase/auth";
 const auth = getAuth();
 
-const Login = () => {
+const Loginpage = () => {
   const navigate = useNavigate();
 
   const signUp = (app) => {
@@ -134,4 +134,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Loginpage;

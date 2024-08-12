@@ -15,9 +15,11 @@ const Arrival = () => {
           <p className="text-sm mt-2">{text}</p>
           <p className="text-sm">{Desciption}</p>
           <p className="text-xl py-3">{Price}</p>
-          <Link to={"/details"}><button className="w-[150px] h-[35px] text-sm  text-white border-[1px] bg-black rounded-md">
-            Buy Now
-          </button></Link>
+          <Link to={"/details"}>
+            <button className="w-[150px] h-[35px] text-sm  text-white border-[1px] bg-black rounded-md">
+              Buy Now
+            </button>
+          </Link>
         </div>
       </div>
     );
@@ -63,7 +65,7 @@ const Arrival = () => {
           Desciption={"Camera 6k"}
           Price={"$2500"}
         />
-         <Phones
+        <Phones
           Icon={<AiOutlineHeart size={25} />}
           imageUrl={"./images/iphone14.png"}
           text={"Apple iPhone 14 Pro "}
@@ -94,7 +96,6 @@ const Arrival = () => {
           Price={"$2500"}
         />
       </div>
-
       <div className="flex justify-center mt-4">
         <Pagination defaultCurrent={1} total={50} className="pagination" />
       </div>
