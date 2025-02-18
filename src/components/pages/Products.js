@@ -109,7 +109,6 @@ const Products = () => {
       </div>
       <div className="w-full bg-white">
         <div className="lg:max-w-[1250px] h-full flex justify-center items-center p-5 mx-auto">
-          {/* time to flex the shid */}
           <div className="h-full flex flex-col  md:flex-row">
             <div className=" hidden md:block">
               <Menu

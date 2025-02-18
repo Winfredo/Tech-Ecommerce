@@ -37,10 +37,17 @@ const Arrival = () => {
         />
         <Phones
           Icon={<AiOutlineHeart size={25} />}
-          imageUrl={"./images/camera.png"}
-          text={"Blackmagic  Cinema"}
-          Desciption={"Camera 6k"}
-          Price={"$2500"}
+          imageUrl={"./images/airpodsmax 2.png"}
+          text={"Airpods Max"}
+          Desciption={"Silver"}
+          Price={"$549"}
+        />
+        <Phones
+          Icon={<AiOutlineHeart size={25} />}
+          imageUrl={"./images/galaxybuds.png"}
+          text={"Galaxy Buds FE"}
+          Desciption={"Samsung Buds."}
+          Price={"$250"}
         />
 
         <Phones
@@ -52,18 +59,11 @@ const Arrival = () => {
         />
 
         <Phones
-          Icon={<AiOutlineHeart size={25} />}
-          imageUrl={"./images/airpodsmax 2.png"}
-          text={"Airpods Max"}
-          Desciption={"Silver"}
-          Price={"$549"}
-        />
-        <Phones
           Icon={<FcLike size={25} />}
-          imageUrl={"./images/camera.png"}
-          text={"Blackmagic  Cinema"}
-          Desciption={"Camera 6k"}
-          Price={"$2500"}
+          imageUrl={"./images/ipad.png"}
+          text={"Ipad Pro"}
+          Desciption={"Silver Color"}
+          Price={"$2000"}
         />
         <Phones
           Icon={<AiOutlineHeart size={25} />}
@@ -90,10 +90,10 @@ const Arrival = () => {
         />
         <Phones
           Icon={<FcLike size={25} />}
-          imageUrl={"./images/camera.png"}
-          text={"Blackmagic  Cinema"}
-          Desciption={"Camera 6k"}
-          Price={"$2500"}
+          imageUrl={"./images/iphone14.png"}
+          text={"Apple iPhone 14 Pro "}
+          Desciption={"(MQ2333)"}
+          Price={"$1200"}
         />
       </div>
       <div className="flex justify-center mt-4">

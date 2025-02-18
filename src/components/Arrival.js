@@ -13,10 +13,10 @@ const Arrival = () => {
     },
     {
       icon: <AiOutlineHeart size={25} />,
-      imageUrl: "./images/camera.png",
-      text: "Blackmagic Pocket Cinema",
-      description: "Camera 6k",
-      price: "$2500",
+      imageUrl: "./images/galaxybuds.png",
+      text: "Galaxy Buds FE",
+      description: "GalaxyBuds",
+      price: "$400",
     },
     {
       icon: <AiOutlineHeart size={25} />,
@@ -83,10 +83,10 @@ const Arrival = () => {
     },
     {
       icon: <AiOutlineHeart size={25} />,
-      imageUrl: "./images/camera.png",
-      text: "Blackmagic Pocket Cinema",
-      description: "Camera 6k",
-      price: "$2500",
+      imageUrl: "./images/iphone14.png",
+      text: "Apple iPhone 15 Pro",
+      description: "(TC5000)",
+      price: "$1500",
     },
   ];
 
